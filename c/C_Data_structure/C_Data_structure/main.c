@@ -1,14 +1,26 @@
-//
-//  main.c
-//  C_Data_structure
-//
-//  Created by 문영호 on 2021/09/06.
-//
-
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+    int a ;
+    int b ;
+    
+   printf("a를 입력하세요: ");
+    scanf("%d",&a);
+    printf("b를 입력하세요 : ");
+    scanf("%d",&b);
+    printf("입력된 수 A는 %d B는 %d\n",a,b);
+    
+    int temp = a;
+    a=b;
+    b=temp;
+   printf("교환된  수 A는 %d B는 %d\n",a,b);
+    
+    
+    
+    
+    
+    
 }
