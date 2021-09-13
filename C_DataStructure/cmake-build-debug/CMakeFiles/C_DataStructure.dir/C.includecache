@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex7.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+

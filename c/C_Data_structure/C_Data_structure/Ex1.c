@@ -1,8 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+//
+//  Ex1.c
+//  C_Data_structure
+//
+//  Created by 문영호 on 2021/09/13.
+//
 
 
 

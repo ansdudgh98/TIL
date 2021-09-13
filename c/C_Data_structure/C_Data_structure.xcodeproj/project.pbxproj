@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D34B34426E60EDE00625A9E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D34B34326E60EDE00625A9E /* main.c */; };
+		5DEB83A626EF251600EE53B7 /* HelloWorld.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB83A526EF251600EE53B7 /* HelloWorld.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		5D34B34026E60EDE00625A9E /* C_Data_structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Data_structure; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D34B34326E60EDE00625A9E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5DEB83A526EF251600EE53B7 /* HelloWorld.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = HelloWorld.c; path = Ch1/HelloWorld.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		5D34B34226E60EDE00625A9E /* C_Data_structure */ = {
 			isa = PBXGroup;
 			children = (
-				5D34B34326E60EDE00625A9E /* main.c */,
+				5DEB83A526EF251600EE53B7 /* HelloWorld.c */,
 			);
 			path = C_Data_structure;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D34B34426E60EDE00625A9E /* main.c in Sources */,
+				5DEB83A626EF251600EE53B7 /* HelloWorld.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
