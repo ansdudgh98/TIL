@@ -1,4 +1,3 @@
-/*
 //
 // Created by 문영호 on 2021/09/13.
 //
@@ -28,4 +27,3 @@ int recursive(int n){
 
 }
 
-*/

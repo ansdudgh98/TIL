@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Volumes/data/study/C_DataStructure/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,24 +117,128 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C_DataStructure
+# Target rules for targets named Practice_Ch2_Ex7
 
 # Build rule for target.
-C_DataStructure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 C_DataStructure
-.PHONY : C_DataStructure
+Practice_Ch2_Ex7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex7
+.PHONY : Practice_Ch2_Ex7
 
 # fast build rule for target.
-C_DataStructure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/build
-.PHONY : C_DataStructure/fast
+Practice_Ch2_Ex7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/build
+.PHONY : Practice_Ch2_Ex7/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex8
+
+# Build rule for target.
+Practice_Ch2_Ex8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex8
+.PHONY : Practice_Ch2_Ex8
+
+# fast build rule for target.
+Practice_Ch2_Ex8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/build
+.PHONY : Practice_Ch2_Ex8/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex6
+
+# Build rule for target.
+Practice_Ch2_Ex6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex6
+.PHONY : Practice_Ch2_Ex6
+
+# fast build rule for target.
+Practice_Ch2_Ex6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/build
+.PHONY : Practice_Ch2_Ex6/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex4
+
+# Build rule for target.
+Practice_Ch2_Ex4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex4
+.PHONY : Practice_Ch2_Ex4
+
+# fast build rule for target.
+Practice_Ch2_Ex4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/build
+.PHONY : Practice_Ch2_Ex4/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex3
+
+# Build rule for target.
+Practice_Ch2_Ex3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex3
+.PHONY : Practice_Ch2_Ex3
+
+# fast build rule for target.
+Practice_Ch2_Ex3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/build
+.PHONY : Practice_Ch2_Ex3/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex2
+
+# Build rule for target.
+Practice_Ch2_Ex2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex2
+.PHONY : Practice_Ch2_Ex2
+
+# fast build rule for target.
+Practice_Ch2_Ex2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/build
+.PHONY : Practice_Ch2_Ex2/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex5
+
+# Build rule for target.
+Practice_Ch2_Ex5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex5
+.PHONY : Practice_Ch2_Ex5
+
+# fast build rule for target.
+Practice_Ch2_Ex5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/build
+.PHONY : Practice_Ch2_Ex5/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Ch2_Ex1
+
+# Build rule for target.
+Practice_Ch2_Ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex1
+.PHONY : Practice_Ch2_Ex1
+
+# fast build rule for target.
+Practice_Ch2_Ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
+.PHONY : Practice_Ch2_Ex1/fast
 
 Practice_Ch2/Ex1.o: Practice_Ch2/Ex1.c.o
 .PHONY : Practice_Ch2/Ex1.o
 
 # target to build an object file
 Practice_Ch2/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex1.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice_Ch2/Ex1.c.o
 .PHONY : Practice_Ch2/Ex1.c.o
 
 Practice_Ch2/Ex1.i: Practice_Ch2/Ex1.c.i
@@ -142,7 +246,7 @@ Practice_Ch2/Ex1.i: Practice_Ch2/Ex1.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice_Ch2/Ex1.c.i
 .PHONY : Practice_Ch2/Ex1.c.i
 
 Practice_Ch2/Ex1.s: Practice_Ch2/Ex1.c.s
@@ -150,39 +254,15 @@ Practice_Ch2/Ex1.s: Practice_Ch2/Ex1.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice_Ch2/Ex1.c.s
 .PHONY : Practice_Ch2/Ex1.c.s
-
-Practice_Ch2/Ex10.o: Practice_Ch2/Ex10.c.o
-.PHONY : Practice_Ch2/Ex10.o
-
-# target to build an object file
-Practice_Ch2/Ex10.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex10.c.o
-.PHONY : Practice_Ch2/Ex10.c.o
-
-Practice_Ch2/Ex10.i: Practice_Ch2/Ex10.c.i
-.PHONY : Practice_Ch2/Ex10.i
-
-# target to preprocess a source file
-Practice_Ch2/Ex10.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex10.c.i
-.PHONY : Practice_Ch2/Ex10.c.i
-
-Practice_Ch2/Ex10.s: Practice_Ch2/Ex10.c.s
-.PHONY : Practice_Ch2/Ex10.s
-
-# target to generate assembly for a file
-Practice_Ch2/Ex10.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex10.c.s
-.PHONY : Practice_Ch2/Ex10.c.s
 
 Practice_Ch2/Ex2.o: Practice_Ch2/Ex2.c.o
 .PHONY : Practice_Ch2/Ex2.o
 
 # target to build an object file
 Practice_Ch2/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex2.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice_Ch2/Ex2.c.o
 .PHONY : Practice_Ch2/Ex2.c.o
 
 Practice_Ch2/Ex2.i: Practice_Ch2/Ex2.c.i
@@ -190,7 +270,7 @@ Practice_Ch2/Ex2.i: Practice_Ch2/Ex2.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex2.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice_Ch2/Ex2.c.i
 .PHONY : Practice_Ch2/Ex2.c.i
 
 Practice_Ch2/Ex2.s: Practice_Ch2/Ex2.c.s
@@ -198,7 +278,7 @@ Practice_Ch2/Ex2.s: Practice_Ch2/Ex2.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex2.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice_Ch2/Ex2.c.s
 .PHONY : Practice_Ch2/Ex2.c.s
 
 Practice_Ch2/Ex3.o: Practice_Ch2/Ex3.c.o
@@ -206,7 +286,7 @@ Practice_Ch2/Ex3.o: Practice_Ch2/Ex3.c.o
 
 # target to build an object file
 Practice_Ch2/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex3.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice_Ch2/Ex3.c.o
 .PHONY : Practice_Ch2/Ex3.c.o
 
 Practice_Ch2/Ex3.i: Practice_Ch2/Ex3.c.i
@@ -214,7 +294,7 @@ Practice_Ch2/Ex3.i: Practice_Ch2/Ex3.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex3.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice_Ch2/Ex3.c.i
 .PHONY : Practice_Ch2/Ex3.c.i
 
 Practice_Ch2/Ex3.s: Practice_Ch2/Ex3.c.s
@@ -222,7 +302,7 @@ Practice_Ch2/Ex3.s: Practice_Ch2/Ex3.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex3.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice_Ch2/Ex3.c.s
 .PHONY : Practice_Ch2/Ex3.c.s
 
 Practice_Ch2/Ex4.o: Practice_Ch2/Ex4.c.o
@@ -230,7 +310,7 @@ Practice_Ch2/Ex4.o: Practice_Ch2/Ex4.c.o
 
 # target to build an object file
 Practice_Ch2/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex4.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice_Ch2/Ex4.c.o
 .PHONY : Practice_Ch2/Ex4.c.o
 
 Practice_Ch2/Ex4.i: Practice_Ch2/Ex4.c.i
@@ -238,7 +318,7 @@ Practice_Ch2/Ex4.i: Practice_Ch2/Ex4.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex4.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice_Ch2/Ex4.c.i
 .PHONY : Practice_Ch2/Ex4.c.i
 
 Practice_Ch2/Ex4.s: Practice_Ch2/Ex4.c.s
@@ -246,7 +326,7 @@ Practice_Ch2/Ex4.s: Practice_Ch2/Ex4.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex4.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice_Ch2/Ex4.c.s
 .PHONY : Practice_Ch2/Ex4.c.s
 
 Practice_Ch2/Ex5.o: Practice_Ch2/Ex5.c.o
@@ -254,7 +334,7 @@ Practice_Ch2/Ex5.o: Practice_Ch2/Ex5.c.o
 
 # target to build an object file
 Practice_Ch2/Ex5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex5.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice_Ch2/Ex5.c.o
 .PHONY : Practice_Ch2/Ex5.c.o
 
 Practice_Ch2/Ex5.i: Practice_Ch2/Ex5.c.i
@@ -262,7 +342,7 @@ Practice_Ch2/Ex5.i: Practice_Ch2/Ex5.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex5.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice_Ch2/Ex5.c.i
 .PHONY : Practice_Ch2/Ex5.c.i
 
 Practice_Ch2/Ex5.s: Practice_Ch2/Ex5.c.s
@@ -270,7 +350,7 @@ Practice_Ch2/Ex5.s: Practice_Ch2/Ex5.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex5.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice_Ch2/Ex5.c.s
 .PHONY : Practice_Ch2/Ex5.c.s
 
 Practice_Ch2/Ex6.o: Practice_Ch2/Ex6.c.o
@@ -278,7 +358,7 @@ Practice_Ch2/Ex6.o: Practice_Ch2/Ex6.c.o
 
 # target to build an object file
 Practice_Ch2/Ex6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex6.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice_Ch2/Ex6.c.o
 .PHONY : Practice_Ch2/Ex6.c.o
 
 Practice_Ch2/Ex6.i: Practice_Ch2/Ex6.c.i
@@ -286,7 +366,7 @@ Practice_Ch2/Ex6.i: Practice_Ch2/Ex6.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex6.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice_Ch2/Ex6.c.i
 .PHONY : Practice_Ch2/Ex6.c.i
 
 Practice_Ch2/Ex6.s: Practice_Ch2/Ex6.c.s
@@ -294,7 +374,7 @@ Practice_Ch2/Ex6.s: Practice_Ch2/Ex6.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex6.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice_Ch2/Ex6.c.s
 .PHONY : Practice_Ch2/Ex6.c.s
 
 Practice_Ch2/Ex7.o: Practice_Ch2/Ex7.c.o
@@ -302,7 +382,7 @@ Practice_Ch2/Ex7.o: Practice_Ch2/Ex7.c.o
 
 # target to build an object file
 Practice_Ch2/Ex7.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex7.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice_Ch2/Ex7.c.o
 .PHONY : Practice_Ch2/Ex7.c.o
 
 Practice_Ch2/Ex7.i: Practice_Ch2/Ex7.c.i
@@ -310,7 +390,7 @@ Practice_Ch2/Ex7.i: Practice_Ch2/Ex7.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice_Ch2/Ex7.c.i
 .PHONY : Practice_Ch2/Ex7.c.i
 
 Practice_Ch2/Ex7.s: Practice_Ch2/Ex7.c.s
@@ -318,7 +398,7 @@ Practice_Ch2/Ex7.s: Practice_Ch2/Ex7.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice_Ch2/Ex7.c.s
 .PHONY : Practice_Ch2/Ex7.c.s
 
 Practice_Ch2/Ex8.o: Practice_Ch2/Ex8.c.o
@@ -326,7 +406,7 @@ Practice_Ch2/Ex8.o: Practice_Ch2/Ex8.c.o
 
 # target to build an object file
 Practice_Ch2/Ex8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex8.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice_Ch2/Ex8.c.o
 .PHONY : Practice_Ch2/Ex8.c.o
 
 Practice_Ch2/Ex8.i: Practice_Ch2/Ex8.c.i
@@ -334,7 +414,7 @@ Practice_Ch2/Ex8.i: Practice_Ch2/Ex8.c.i
 
 # target to preprocess a source file
 Practice_Ch2/Ex8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice_Ch2/Ex8.c.i
 .PHONY : Practice_Ch2/Ex8.c.i
 
 Practice_Ch2/Ex8.s: Practice_Ch2/Ex8.c.s
@@ -342,39 +422,15 @@ Practice_Ch2/Ex8.s: Practice_Ch2/Ex8.c.s
 
 # target to generate assembly for a file
 Practice_Ch2/Ex8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice_Ch2/Ex8.c.s
 .PHONY : Practice_Ch2/Ex8.c.s
-
-Practice_Ch2/Ex9.o: Practice_Ch2/Ex9.c.o
-.PHONY : Practice_Ch2/Ex9.o
-
-# target to build an object file
-Practice_Ch2/Ex9.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex9.c.o
-.PHONY : Practice_Ch2/Ex9.c.o
-
-Practice_Ch2/Ex9.i: Practice_Ch2/Ex9.c.i
-.PHONY : Practice_Ch2/Ex9.i
-
-# target to preprocess a source file
-Practice_Ch2/Ex9.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex9.c.i
-.PHONY : Practice_Ch2/Ex9.c.i
-
-Practice_Ch2/Ex9.s: Practice_Ch2/Ex9.c.s
-.PHONY : Practice_Ch2/Ex9.s
-
-# target to generate assembly for a file
-Practice_Ch2/Ex9.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/Practice_Ch2/Ex9.c.s
-.PHONY : Practice_Ch2/Ex9.c.s
 
 main.o: main.c.o
 .PHONY : main.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -382,7 +438,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -390,7 +446,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_DataStructure.dir/build.make CMakeFiles/C_DataStructure.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -401,13 +457,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... C_DataStructure"
+	@echo "... Practice_Ch2_Ex1"
+	@echo "... Practice_Ch2_Ex2"
+	@echo "... Practice_Ch2_Ex3"
+	@echo "... Practice_Ch2_Ex4"
+	@echo "... Practice_Ch2_Ex5"
+	@echo "... Practice_Ch2_Ex6"
+	@echo "... Practice_Ch2_Ex7"
+	@echo "... Practice_Ch2_Ex8"
+	@echo "... main"
 	@echo "... Practice_Ch2/Ex1.o"
 	@echo "... Practice_Ch2/Ex1.i"
 	@echo "... Practice_Ch2/Ex1.s"
-	@echo "... Practice_Ch2/Ex10.o"
-	@echo "... Practice_Ch2/Ex10.i"
-	@echo "... Practice_Ch2/Ex10.s"
 	@echo "... Practice_Ch2/Ex2.o"
 	@echo "... Practice_Ch2/Ex2.i"
 	@echo "... Practice_Ch2/Ex2.s"
@@ -429,9 +490,6 @@ help:
 	@echo "... Practice_Ch2/Ex8.o"
 	@echo "... Practice_Ch2/Ex8.i"
 	@echo "... Practice_Ch2/Ex8.s"
-	@echo "... Practice_Ch2/Ex9.o"
-	@echo "... Practice_Ch2/Ex9.i"
-	@echo "... Practice_Ch2/Ex9.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

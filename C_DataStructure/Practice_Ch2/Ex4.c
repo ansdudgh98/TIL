@@ -1,4 +1,3 @@
-/*
 //
 // Created by 문영호 on 2021/09/13.
 //
@@ -25,4 +24,4 @@ int main()
 int sig(int n){
     if(n<=1) return n;
     else return n+sig(n-1);
-}*/
+}

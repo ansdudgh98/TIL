@@ -6,11 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex7.c
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex1.c
 stdio.h
 -
-stdlib.h
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex10.c
+stdio.h
 -
-time.h
+math.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex2.c
+stdio.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex3.c
+stdio.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex4.c
+stdio.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex5.c
+stdio.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex6.c
+stdio.h
+-
+string.h
+-
+
+/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex8.c
+stdio.h
+-
+string.h
 -
 

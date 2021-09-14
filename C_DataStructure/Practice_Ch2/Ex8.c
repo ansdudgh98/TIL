@@ -1,4 +1,3 @@
-/*
 #include<stdio.h>
 #include<string.h>
 //재귀 호출 원형 정의
@@ -21,4 +20,3 @@ int gcd(int m,int n){
     }
 
 }
-*/

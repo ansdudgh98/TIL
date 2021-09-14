@@ -1,4 +1,3 @@
-/*
 
 #include <stdio.h>
 #include <math.h>
@@ -45,4 +44,4 @@ int calc_total_calroies(struct food array[], int size) {
 
     return total;
 
-}*/
+}
