@@ -398,28 +398,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex1.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex1.c">
 			<Option target="Practice_Ch2_Ex1"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex2.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex2.c">
 			<Option target="Practice_Ch2_Ex2"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex3.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex3.c">
 			<Option target="Practice_Ch2_Ex3"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex4.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex4.c">
 			<Option target="Practice_Ch2_Ex4"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex5.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex5.c">
 			<Option target="Practice_Ch2_Ex5"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex6.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex6.c">
 			<Option target="Practice_Ch2_Ex6"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex7.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex7.c">
 			<Option target="Practice_Ch2_Ex7"/>
 		</Unit>
-		<Unit filename="/Volumes/data/study/C_DataStructure/Practice_Ch2/Ex8.c">
+		<Unit filename="/Volumes/data/study/C_DataStructure/Practice.Week2/Ex8.c">
 			<Option target="Practice_Ch2_Ex8"/>
 		</Unit>
 		<Unit filename="/Volumes/data/study/C_DataStructure/main.c">
