@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Volumes/data/study/C_DataStructure/Practice/Week2/Ex5.c
+/Volumes/data/study/C_DataStructure/BookPractice/Ch1/Ex1.c
 stdio.h
+-
+stdlib.h
+-
+time.h
 -
 

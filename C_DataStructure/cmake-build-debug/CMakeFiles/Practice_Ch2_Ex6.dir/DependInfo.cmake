@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Volumes/data/study/C_DataStructure/Practice.Week2/Ex6.c" "/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex6.dir/Practice.Week2/Ex6.c.o"
+  "/Volumes/data/study/C_DataStructure/Practice/Week2/Ex6.c" "/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

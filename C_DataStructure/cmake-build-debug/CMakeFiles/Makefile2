@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Volumes/data/study/C_DataStructure/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/Practice_Ch2_Ex7.dir/all
-all: CMakeFiles/main.dir/all
 all: CMakeFiles/Practice_Ch2_Ex8.dir/all
 all: CMakeFiles/Practice_Ch2_Ex6.dir/all
 all: CMakeFiles/Practice_Ch2_Ex4.dir/all
 all: CMakeFiles/Practice_Ch2_Ex3.dir/all
 all: CMakeFiles/Practice_Ch2_Ex2.dir/all
+all: CMakeFiles/BookPractice_Ch1_Ex1.dir/all
 all: CMakeFiles/Practice_Ch2_Ex5.dir/all
 all: CMakeFiles/Practice_Ch2_Ex1.dir/all
 .PHONY : all
@@ -80,12 +80,12 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Practice_Ch2_Ex7.dir/clean
-clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex8.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex6.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex4.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex3.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex2.dir/clean
+clean: CMakeFiles/BookPractice_Ch1_Ex1.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex5.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex1.dir/clean
 .PHONY : clean
@@ -97,7 +97,7 @@ clean: CMakeFiles/Practice_Ch2_Ex1.dir/clean
 CMakeFiles/Practice_Ch2_Ex7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Practice_Ch2_Ex7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target Practice_Ch2_Ex7"
 .PHONY : CMakeFiles/Practice_Ch2_Ex7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -117,39 +117,13 @@ CMakeFiles/Practice_Ch2_Ex7.dir/clean:
 .PHONY : CMakeFiles/Practice_Ch2_Ex7.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Practice_Ch2_Ex8.dir
 
 # All Build rule for target.
 CMakeFiles/Practice_Ch2_Ex8.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target Practice_Ch2_Ex8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target Practice_Ch2_Ex8"
 .PHONY : CMakeFiles/Practice_Ch2_Ex8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -175,7 +149,7 @@ CMakeFiles/Practice_Ch2_Ex8.dir/clean:
 CMakeFiles/Practice_Ch2_Ex6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Practice_Ch2_Ex6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Practice_Ch2_Ex6"
 .PHONY : CMakeFiles/Practice_Ch2_Ex6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -201,7 +175,7 @@ CMakeFiles/Practice_Ch2_Ex6.dir/clean:
 CMakeFiles/Practice_Ch2_Ex4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target Practice_Ch2_Ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target Practice_Ch2_Ex4"
 .PHONY : CMakeFiles/Practice_Ch2_Ex4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -227,7 +201,7 @@ CMakeFiles/Practice_Ch2_Ex4.dir/clean:
 CMakeFiles/Practice_Ch2_Ex3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Practice_Ch2_Ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target Practice_Ch2_Ex3"
 .PHONY : CMakeFiles/Practice_Ch2_Ex3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -253,7 +227,7 @@ CMakeFiles/Practice_Ch2_Ex3.dir/clean:
 CMakeFiles/Practice_Ch2_Ex2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Practice_Ch2_Ex2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Practice_Ch2_Ex2"
 .PHONY : CMakeFiles/Practice_Ch2_Ex2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -273,13 +247,39 @@ CMakeFiles/Practice_Ch2_Ex2.dir/clean:
 .PHONY : CMakeFiles/Practice_Ch2_Ex2.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch1_Ex1.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch1_Ex1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BookPractice_Ch1_Ex1"
+.PHONY : CMakeFiles/BookPractice_Ch1_Ex1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch1_Ex1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch1_Ex1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch1_Ex1.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch1_Ex1: CMakeFiles/BookPractice_Ch1_Ex1.dir/rule
+.PHONY : BookPractice_Ch1_Ex1
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch1_Ex1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch1_Ex1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Practice_Ch2_Ex5.dir
 
 # All Build rule for target.
 CMakeFiles/Practice_Ch2_Ex5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target Practice_Ch2_Ex5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Practice_Ch2_Ex5"
 .PHONY : CMakeFiles/Practice_Ch2_Ex5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -305,7 +305,7 @@ CMakeFiles/Practice_Ch2_Ex5.dir/clean:
 CMakeFiles/Practice_Ch2_Ex1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Practice_Ch2_Ex1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Practice_Ch2_Ex1"
 .PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/all
 
 # Build rule for subdir invocation for target.

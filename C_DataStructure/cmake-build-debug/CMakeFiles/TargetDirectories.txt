@@ -1,11 +1,11 @@
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex7.dir
-/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/main.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex8.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex6.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex4.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex3.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex2.dir
+/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch1_Ex1.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex5.dir
 /Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex1.dir

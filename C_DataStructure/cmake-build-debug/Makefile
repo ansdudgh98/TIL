@@ -130,19 +130,6 @@ Practice_Ch2_Ex7/fast:
 .PHONY : Practice_Ch2_Ex7/fast
 
 #=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
 # Target rules for targets named Practice_Ch2_Ex8
 
 # Build rule for target.
@@ -208,6 +195,19 @@ Practice_Ch2_Ex2/fast:
 .PHONY : Practice_Ch2_Ex2/fast
 
 #=============================================================================
+# Target rules for targets named BookPractice_Ch1_Ex1
+
+# Build rule for target.
+BookPractice_Ch1_Ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch1_Ex1
+.PHONY : BookPractice_Ch1_Ex1
+
+# fast build rule for target.
+BookPractice_Ch1_Ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/build
+.PHONY : BookPractice_Ch1_Ex1/fast
+
+#=============================================================================
 # Target rules for targets named Practice_Ch2_Ex5
 
 # Build rule for target.
@@ -233,221 +233,221 @@ Practice_Ch2_Ex1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
 .PHONY : Practice_Ch2_Ex1/fast
 
-Practice.Week2/Ex1.o: Practice.Week2/Ex1.c.o
-.PHONY : Practice.Week2/Ex1.o
+BookPractice/Ch1/Ex1.o: BookPractice/Ch1/Ex1.c.o
+.PHONY : BookPractice/Ch1/Ex1.o
 
 # target to build an object file
-Practice.Week2/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice.Week2/Ex1.c.o
-.PHONY : Practice.Week2/Ex1.c.o
+BookPractice/Ch1/Ex1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.o
+.PHONY : BookPractice/Ch1/Ex1.c.o
 
-Practice.Week2/Ex1.i: Practice.Week2/Ex1.c.i
-.PHONY : Practice.Week2/Ex1.i
+BookPractice/Ch1/Ex1.i: BookPractice/Ch1/Ex1.c.i
+.PHONY : BookPractice/Ch1/Ex1.i
 
 # target to preprocess a source file
-Practice.Week2/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice.Week2/Ex1.c.i
-.PHONY : Practice.Week2/Ex1.c.i
+BookPractice/Ch1/Ex1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.i
+.PHONY : BookPractice/Ch1/Ex1.c.i
 
-Practice.Week2/Ex1.s: Practice.Week2/Ex1.c.s
-.PHONY : Practice.Week2/Ex1.s
+BookPractice/Ch1/Ex1.s: BookPractice/Ch1/Ex1.c.s
+.PHONY : BookPractice/Ch1/Ex1.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice.Week2/Ex1.c.s
-.PHONY : Practice.Week2/Ex1.c.s
+BookPractice/Ch1/Ex1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.s
+.PHONY : BookPractice/Ch1/Ex1.c.s
 
-Practice.Week2/Ex2.o: Practice.Week2/Ex2.c.o
-.PHONY : Practice.Week2/Ex2.o
+Practice/Week2/Ex1.o: Practice/Week2/Ex1.c.o
+.PHONY : Practice/Week2/Ex1.o
 
 # target to build an object file
-Practice.Week2/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice.Week2/Ex2.c.o
-.PHONY : Practice.Week2/Ex2.c.o
+Practice/Week2/Ex1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.o
+.PHONY : Practice/Week2/Ex1.c.o
 
-Practice.Week2/Ex2.i: Practice.Week2/Ex2.c.i
-.PHONY : Practice.Week2/Ex2.i
+Practice/Week2/Ex1.i: Practice/Week2/Ex1.c.i
+.PHONY : Practice/Week2/Ex1.i
 
 # target to preprocess a source file
-Practice.Week2/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice.Week2/Ex2.c.i
-.PHONY : Practice.Week2/Ex2.c.i
+Practice/Week2/Ex1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.i
+.PHONY : Practice/Week2/Ex1.c.i
 
-Practice.Week2/Ex2.s: Practice.Week2/Ex2.c.s
-.PHONY : Practice.Week2/Ex2.s
+Practice/Week2/Ex1.s: Practice/Week2/Ex1.c.s
+.PHONY : Practice/Week2/Ex1.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice.Week2/Ex2.c.s
-.PHONY : Practice.Week2/Ex2.c.s
+Practice/Week2/Ex1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.s
+.PHONY : Practice/Week2/Ex1.c.s
 
-Practice.Week2/Ex3.o: Practice.Week2/Ex3.c.o
-.PHONY : Practice.Week2/Ex3.o
+Practice/Week2/Ex2.o: Practice/Week2/Ex2.c.o
+.PHONY : Practice/Week2/Ex2.o
 
 # target to build an object file
-Practice.Week2/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice.Week2/Ex3.c.o
-.PHONY : Practice.Week2/Ex3.c.o
+Practice/Week2/Ex2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.o
+.PHONY : Practice/Week2/Ex2.c.o
 
-Practice.Week2/Ex3.i: Practice.Week2/Ex3.c.i
-.PHONY : Practice.Week2/Ex3.i
+Practice/Week2/Ex2.i: Practice/Week2/Ex2.c.i
+.PHONY : Practice/Week2/Ex2.i
 
 # target to preprocess a source file
-Practice.Week2/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice.Week2/Ex3.c.i
-.PHONY : Practice.Week2/Ex3.c.i
+Practice/Week2/Ex2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.i
+.PHONY : Practice/Week2/Ex2.c.i
 
-Practice.Week2/Ex3.s: Practice.Week2/Ex3.c.s
-.PHONY : Practice.Week2/Ex3.s
+Practice/Week2/Ex2.s: Practice/Week2/Ex2.c.s
+.PHONY : Practice/Week2/Ex2.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice.Week2/Ex3.c.s
-.PHONY : Practice.Week2/Ex3.c.s
+Practice/Week2/Ex2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.s
+.PHONY : Practice/Week2/Ex2.c.s
 
-Practice.Week2/Ex4.o: Practice.Week2/Ex4.c.o
-.PHONY : Practice.Week2/Ex4.o
+Practice/Week2/Ex3.o: Practice/Week2/Ex3.c.o
+.PHONY : Practice/Week2/Ex3.o
 
 # target to build an object file
-Practice.Week2/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice.Week2/Ex4.c.o
-.PHONY : Practice.Week2/Ex4.c.o
+Practice/Week2/Ex3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.o
+.PHONY : Practice/Week2/Ex3.c.o
 
-Practice.Week2/Ex4.i: Practice.Week2/Ex4.c.i
-.PHONY : Practice.Week2/Ex4.i
+Practice/Week2/Ex3.i: Practice/Week2/Ex3.c.i
+.PHONY : Practice/Week2/Ex3.i
 
 # target to preprocess a source file
-Practice.Week2/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice.Week2/Ex4.c.i
-.PHONY : Practice.Week2/Ex4.c.i
+Practice/Week2/Ex3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.i
+.PHONY : Practice/Week2/Ex3.c.i
 
-Practice.Week2/Ex4.s: Practice.Week2/Ex4.c.s
-.PHONY : Practice.Week2/Ex4.s
+Practice/Week2/Ex3.s: Practice/Week2/Ex3.c.s
+.PHONY : Practice/Week2/Ex3.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice.Week2/Ex4.c.s
-.PHONY : Practice.Week2/Ex4.c.s
+Practice/Week2/Ex3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.s
+.PHONY : Practice/Week2/Ex3.c.s
 
-Practice.Week2/Ex5.o: Practice.Week2/Ex5.c.o
-.PHONY : Practice.Week2/Ex5.o
+Practice/Week2/Ex4.o: Practice/Week2/Ex4.c.o
+.PHONY : Practice/Week2/Ex4.o
 
 # target to build an object file
-Practice.Week2/Ex5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice.Week2/Ex5.c.o
-.PHONY : Practice.Week2/Ex5.c.o
+Practice/Week2/Ex4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.o
+.PHONY : Practice/Week2/Ex4.c.o
 
-Practice.Week2/Ex5.i: Practice.Week2/Ex5.c.i
-.PHONY : Practice.Week2/Ex5.i
+Practice/Week2/Ex4.i: Practice/Week2/Ex4.c.i
+.PHONY : Practice/Week2/Ex4.i
 
 # target to preprocess a source file
-Practice.Week2/Ex5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice.Week2/Ex5.c.i
-.PHONY : Practice.Week2/Ex5.c.i
+Practice/Week2/Ex4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.i
+.PHONY : Practice/Week2/Ex4.c.i
 
-Practice.Week2/Ex5.s: Practice.Week2/Ex5.c.s
-.PHONY : Practice.Week2/Ex5.s
+Practice/Week2/Ex4.s: Practice/Week2/Ex4.c.s
+.PHONY : Practice/Week2/Ex4.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice.Week2/Ex5.c.s
-.PHONY : Practice.Week2/Ex5.c.s
+Practice/Week2/Ex4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.s
+.PHONY : Practice/Week2/Ex4.c.s
 
-Practice.Week2/Ex6.o: Practice.Week2/Ex6.c.o
-.PHONY : Practice.Week2/Ex6.o
+Practice/Week2/Ex5.o: Practice/Week2/Ex5.c.o
+.PHONY : Practice/Week2/Ex5.o
 
 # target to build an object file
-Practice.Week2/Ex6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice.Week2/Ex6.c.o
-.PHONY : Practice.Week2/Ex6.c.o
+Practice/Week2/Ex5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.o
+.PHONY : Practice/Week2/Ex5.c.o
 
-Practice.Week2/Ex6.i: Practice.Week2/Ex6.c.i
-.PHONY : Practice.Week2/Ex6.i
+Practice/Week2/Ex5.i: Practice/Week2/Ex5.c.i
+.PHONY : Practice/Week2/Ex5.i
 
 # target to preprocess a source file
-Practice.Week2/Ex6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice.Week2/Ex6.c.i
-.PHONY : Practice.Week2/Ex6.c.i
+Practice/Week2/Ex5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.i
+.PHONY : Practice/Week2/Ex5.c.i
 
-Practice.Week2/Ex6.s: Practice.Week2/Ex6.c.s
-.PHONY : Practice.Week2/Ex6.s
+Practice/Week2/Ex5.s: Practice/Week2/Ex5.c.s
+.PHONY : Practice/Week2/Ex5.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice.Week2/Ex6.c.s
-.PHONY : Practice.Week2/Ex6.c.s
+Practice/Week2/Ex5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.s
+.PHONY : Practice/Week2/Ex5.c.s
 
-Practice.Week2/Ex7.o: Practice.Week2/Ex7.c.o
-.PHONY : Practice.Week2/Ex7.o
+Practice/Week2/Ex6.o: Practice/Week2/Ex6.c.o
+.PHONY : Practice/Week2/Ex6.o
 
 # target to build an object file
-Practice.Week2/Ex7.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice.Week2/Ex7.c.o
-.PHONY : Practice.Week2/Ex7.c.o
+Practice/Week2/Ex6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.o
+.PHONY : Practice/Week2/Ex6.c.o
 
-Practice.Week2/Ex7.i: Practice.Week2/Ex7.c.i
-.PHONY : Practice.Week2/Ex7.i
+Practice/Week2/Ex6.i: Practice/Week2/Ex6.c.i
+.PHONY : Practice/Week2/Ex6.i
 
 # target to preprocess a source file
-Practice.Week2/Ex7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice.Week2/Ex7.c.i
-.PHONY : Practice.Week2/Ex7.c.i
+Practice/Week2/Ex6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.i
+.PHONY : Practice/Week2/Ex6.c.i
 
-Practice.Week2/Ex7.s: Practice.Week2/Ex7.c.s
-.PHONY : Practice.Week2/Ex7.s
+Practice/Week2/Ex6.s: Practice/Week2/Ex6.c.s
+.PHONY : Practice/Week2/Ex6.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice.Week2/Ex7.c.s
-.PHONY : Practice.Week2/Ex7.c.s
+Practice/Week2/Ex6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.s
+.PHONY : Practice/Week2/Ex6.c.s
 
-Practice.Week2/Ex8.o: Practice.Week2/Ex8.c.o
-.PHONY : Practice.Week2/Ex8.o
+Practice/Week2/Ex7.o: Practice/Week2/Ex7.c.o
+.PHONY : Practice/Week2/Ex7.o
 
 # target to build an object file
-Practice.Week2/Ex8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o
-.PHONY : Practice.Week2/Ex8.c.o
+Practice/Week2/Ex7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.o
+.PHONY : Practice/Week2/Ex7.c.o
 
-Practice.Week2/Ex8.i: Practice.Week2/Ex8.c.i
-.PHONY : Practice.Week2/Ex8.i
+Practice/Week2/Ex7.i: Practice/Week2/Ex7.c.i
+.PHONY : Practice/Week2/Ex7.i
 
 # target to preprocess a source file
-Practice.Week2/Ex8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.i
-.PHONY : Practice.Week2/Ex8.c.i
+Practice/Week2/Ex7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.i
+.PHONY : Practice/Week2/Ex7.c.i
 
-Practice.Week2/Ex8.s: Practice.Week2/Ex8.c.s
-.PHONY : Practice.Week2/Ex8.s
+Practice/Week2/Ex7.s: Practice/Week2/Ex7.c.s
+.PHONY : Practice/Week2/Ex7.s
 
 # target to generate assembly for a file
-Practice.Week2/Ex8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.s
-.PHONY : Practice.Week2/Ex8.c.s
+Practice/Week2/Ex7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.s
+.PHONY : Practice/Week2/Ex7.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+Practice/Week2/Ex8.o: Practice/Week2/Ex8.c.o
+.PHONY : Practice/Week2/Ex8.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.o
-.PHONY : main.c.o
+Practice/Week2/Ex8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o
+.PHONY : Practice/Week2/Ex8.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+Practice/Week2/Ex8.i: Practice/Week2/Ex8.c.i
+.PHONY : Practice/Week2/Ex8.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
-.PHONY : main.c.i
+Practice/Week2/Ex8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.i
+.PHONY : Practice/Week2/Ex8.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+Practice/Week2/Ex8.s: Practice/Week2/Ex8.c.s
+.PHONY : Practice/Week2/Ex8.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
-.PHONY : main.c.s
+Practice/Week2/Ex8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s
+.PHONY : Practice/Week2/Ex8.c.s
 
 # Help Target
 help:
@@ -457,6 +457,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BookPractice_Ch1_Ex1"
 	@echo "... Practice_Ch2_Ex1"
 	@echo "... Practice_Ch2_Ex2"
 	@echo "... Practice_Ch2_Ex3"
@@ -465,34 +466,33 @@ help:
 	@echo "... Practice_Ch2_Ex6"
 	@echo "... Practice_Ch2_Ex7"
 	@echo "... Practice_Ch2_Ex8"
-	@echo "... main"
-	@echo "... Practice.Week2/Ex1.o"
-	@echo "... Practice.Week2/Ex1.i"
-	@echo "... Practice.Week2/Ex1.s"
-	@echo "... Practice.Week2/Ex2.o"
-	@echo "... Practice.Week2/Ex2.i"
-	@echo "... Practice.Week2/Ex2.s"
-	@echo "... Practice.Week2/Ex3.o"
-	@echo "... Practice.Week2/Ex3.i"
-	@echo "... Practice.Week2/Ex3.s"
-	@echo "... Practice.Week2/Ex4.o"
-	@echo "... Practice.Week2/Ex4.i"
-	@echo "... Practice.Week2/Ex4.s"
-	@echo "... Practice.Week2/Ex5.o"
-	@echo "... Practice.Week2/Ex5.i"
-	@echo "... Practice.Week2/Ex5.s"
-	@echo "... Practice.Week2/Ex6.o"
-	@echo "... Practice.Week2/Ex6.i"
-	@echo "... Practice.Week2/Ex6.s"
-	@echo "... Practice.Week2/Ex7.o"
-	@echo "... Practice.Week2/Ex7.i"
-	@echo "... Practice.Week2/Ex7.s"
-	@echo "... Practice.Week2/Ex8.o"
-	@echo "... Practice.Week2/Ex8.i"
-	@echo "... Practice.Week2/Ex8.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... BookPractice/Ch1/Ex1.o"
+	@echo "... BookPractice/Ch1/Ex1.i"
+	@echo "... BookPractice/Ch1/Ex1.s"
+	@echo "... Practice/Week2/Ex1.o"
+	@echo "... Practice/Week2/Ex1.i"
+	@echo "... Practice/Week2/Ex1.s"
+	@echo "... Practice/Week2/Ex2.o"
+	@echo "... Practice/Week2/Ex2.i"
+	@echo "... Practice/Week2/Ex2.s"
+	@echo "... Practice/Week2/Ex3.o"
+	@echo "... Practice/Week2/Ex3.i"
+	@echo "... Practice/Week2/Ex3.s"
+	@echo "... Practice/Week2/Ex4.o"
+	@echo "... Practice/Week2/Ex4.i"
+	@echo "... Practice/Week2/Ex4.s"
+	@echo "... Practice/Week2/Ex5.o"
+	@echo "... Practice/Week2/Ex5.i"
+	@echo "... Practice/Week2/Ex5.s"
+	@echo "... Practice/Week2/Ex6.o"
+	@echo "... Practice/Week2/Ex6.i"
+	@echo "... Practice/Week2/Ex6.s"
+	@echo "... Practice/Week2/Ex7.o"
+	@echo "... Practice/Week2/Ex7.i"
+	@echo "... Practice/Week2/Ex7.s"
+	@echo "... Practice/Week2/Ex8.o"
+	@echo "... Practice/Week2/Ex8.i"
+	@echo "... Practice/Week2/Ex8.s"
 .PHONY : help
 
 

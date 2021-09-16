@@ -66,27 +66,27 @@ include CMakeFiles/Practice_Ch2_Ex8.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Practice_Ch2_Ex8.dir/flags.make
 
-CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o: CMakeFiles/Practice_Ch2_Ex8.dir/flags.make
-CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o: ../Practice.Week2/Ex8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o -c /Volumes/data/study/C_DataStructure/Practice.Week2/Ex8.c
+CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o: CMakeFiles/Practice_Ch2_Ex8.dir/flags.make
+CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o: ../Practice/Week2/Ex8.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o -c /Volumes/data/study/C_DataStructure/Practice/Week2/Ex8.c
 
-CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/data/study/C_DataStructure/Practice.Week2/Ex8.c > CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.i
+CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/data/study/C_DataStructure/Practice/Week2/Ex8.c > CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.i
 
-CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/data/study/C_DataStructure/Practice.Week2/Ex8.c -o CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.s
+CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/data/study/C_DataStructure/Practice/Week2/Ex8.c -o CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s
 
 # Object files for target Practice_Ch2_Ex8
 Practice_Ch2_Ex8_OBJECTS = \
-"CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o"
+"CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o"
 
 # External object files for target Practice_Ch2_Ex8
 Practice_Ch2_Ex8_EXTERNAL_OBJECTS =
 
-Practice_Ch2_Ex8: CMakeFiles/Practice_Ch2_Ex8.dir/Practice.Week2/Ex8.c.o
+Practice_Ch2_Ex8: CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o
 Practice_Ch2_Ex8: CMakeFiles/Practice_Ch2_Ex8.dir/build.make
 Practice_Ch2_Ex8: CMakeFiles/Practice_Ch2_Ex8.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/data/study/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Practice_Ch2_Ex8"

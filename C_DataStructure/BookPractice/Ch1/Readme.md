@@ -73,8 +73,29 @@
 
 -자연수를 나타내는 나타내는 추상자료형
 
-객체: 0에서 시작하며 
+객체: 0에서 시작하며 INT_MAX까지의 순서화 된 정수의 부분범위
 
-```   
+함수:
 
-```
+    Nat_Number zero() :: 0
+
+    Nat_Number successor(x) :: if(x == INT_MAX) return x
+                               else return x + 1
+    
+    Boolean is_zero(x) :: if (x) return FALSE
+                          else return TRUE
+
+    Boolean equal(x,y) :: if(x==y) return TRUE
+                          else return FALSE
+
+    Nat_Number add(x,y) :: if((x=y) <= INT_MAX)
+                           else return x+y
+    
+    Nat_Number sub(x,y) :: if(x)<y return 0;
+                           else return x-y;
+
+
+## 1-3. 알고리즘의 성능분석
+
+
+
