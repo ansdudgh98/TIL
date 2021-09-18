@@ -50,7 +50,67 @@ double slow_power(double x,int n){
 ```c
 double power(double x,int n){
     if(n==0) return 1;
-    
+    else if((n%2)==0)
+        return power(x*x,n/2);
+    else return x*power(x*x,(n-1)/2); 
+}
+```
+
+3. 파보나치 수열
+
+순환적인 파보나치 수열 계산 프로그램
+```c
+int fib(int n)
+{
+    if(n==0) return 0;
+    if(n==1) return 1;
+    return (fib(n-1) + fib(n-2));
+}
+```
+반복적인 피보나치 수열 계산 프로그램
+
+```c
+int fib_iter(int n){
+    if(n==0) return 0;
+    if(n==1) return 1;
+
+    int pp=0
+    int p=1
+    int result = 0;
+
+    for(int i = 2;i<=n ;i++){
+        result = p + pp;
+        pp = p ;
+        p= result;
+    }
+
+    return result;
+}
+```
+
+3. 하노이탑 문제
+
+```c
+
+#include<stdio.h>
+void hanoi_tower(int n,char from,char tmp,char to)
+{
+    if (n==1) printf("원판 1을 %c에서 %c으로 옮긴다.\n",from,to);
+    else {
+        hanoi_tower(n-1,from,to,tmp);
+        printf("원판 %d에서 %c으로 옮긴다.);
+        hanoi_tower(n-1,tmp,from,to);
+        
+    }
+}
+
+int main(void){
+    hanoi_tower(4,'A','B','C');
+    return 0;
 }
 
 ```
+
+
+
+ 
