@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Practice_Week3_Maze_201721164.dir/Practice/Week3/Maze_201721164.c.o -o Practice_Week3_Maze_201721164 

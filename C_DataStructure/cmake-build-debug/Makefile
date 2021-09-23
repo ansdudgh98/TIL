@@ -260,6 +260,32 @@ BookPractice_Ch3_Ex2/fast:
 .PHONY : BookPractice_Ch3_Ex2/fast
 
 #=============================================================================
+# Target rules for targets named BookPractice_Ch4_Ex2
+
+# Build rule for target.
+BookPractice_Ch4_Ex2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch4_Ex2
+.PHONY : BookPractice_Ch4_Ex2
+
+# fast build rule for target.
+BookPractice_Ch4_Ex2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/build
+.PHONY : BookPractice_Ch4_Ex2/fast
+
+#=============================================================================
+# Target rules for targets named BookPractice_Ch4_Ex1
+
+# Build rule for target.
+BookPractice_Ch4_Ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch4_Ex1
+.PHONY : BookPractice_Ch4_Ex1
+
+# fast build rule for target.
+BookPractice_Ch4_Ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/build
+.PHONY : BookPractice_Ch4_Ex1/fast
+
+#=============================================================================
 # Target rules for targets named Practice_Ch2_Ex1
 
 # Build rule for target.
@@ -297,6 +323,19 @@ Practice_Ch2_Ex2: cmake_check_build_system
 Practice_Ch2_Ex2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/build
 .PHONY : Practice_Ch2_Ex2/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Week3_Maze1
+
+# Build rule for target.
+Practice_Week3_Maze1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week3_Maze1
+.PHONY : Practice_Week3_Maze1
+
+# fast build rule for target.
+Practice_Week3_Maze1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/build
+.PHONY : Practice_Week3_Maze1/fast
 
 #=============================================================================
 # Target rules for targets named BookPractice_Ch3_Ex6
@@ -553,6 +592,54 @@ BookPractice/Ch3/Ex8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/BookPractice/Ch3/Ex8.c.s
 .PHONY : BookPractice/Ch3/Ex8.c.s
 
+BookPractice/Ch4/Ex1.o: BookPractice/Ch4/Ex1.c.o
+.PHONY : BookPractice/Ch4/Ex1.o
+
+# target to build an object file
+BookPractice/Ch4/Ex1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.o
+.PHONY : BookPractice/Ch4/Ex1.c.o
+
+BookPractice/Ch4/Ex1.i: BookPractice/Ch4/Ex1.c.i
+.PHONY : BookPractice/Ch4/Ex1.i
+
+# target to preprocess a source file
+BookPractice/Ch4/Ex1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.i
+.PHONY : BookPractice/Ch4/Ex1.c.i
+
+BookPractice/Ch4/Ex1.s: BookPractice/Ch4/Ex1.c.s
+.PHONY : BookPractice/Ch4/Ex1.s
+
+# target to generate assembly for a file
+BookPractice/Ch4/Ex1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.s
+.PHONY : BookPractice/Ch4/Ex1.c.s
+
+BookPractice/Ch4/Ex2.o: BookPractice/Ch4/Ex2.c.o
+.PHONY : BookPractice/Ch4/Ex2.o
+
+# target to build an object file
+BookPractice/Ch4/Ex2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.o
+.PHONY : BookPractice/Ch4/Ex2.c.o
+
+BookPractice/Ch4/Ex2.i: BookPractice/Ch4/Ex2.c.i
+.PHONY : BookPractice/Ch4/Ex2.i
+
+# target to preprocess a source file
+BookPractice/Ch4/Ex2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.i
+.PHONY : BookPractice/Ch4/Ex2.c.i
+
+BookPractice/Ch4/Ex2.s: BookPractice/Ch4/Ex2.c.s
+.PHONY : BookPractice/Ch4/Ex2.s
+
+# target to generate assembly for a file
+BookPractice/Ch4/Ex2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.s
+.PHONY : BookPractice/Ch4/Ex2.c.s
+
 Practice/Week2/Ex1.o: Practice/Week2/Ex1.c.o
 .PHONY : Practice/Week2/Ex1.o
 
@@ -745,6 +832,30 @@ Practice/Week2/Ex8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s
 .PHONY : Practice/Week2/Ex8.c.s
 
+Practice/Week3/Maze_201721164.o: Practice/Week3/Maze_201721164.c.o
+.PHONY : Practice/Week3/Maze_201721164.o
+
+# target to build an object file
+Practice/Week3/Maze_201721164.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.o
+.PHONY : Practice/Week3/Maze_201721164.c.o
+
+Practice/Week3/Maze_201721164.i: Practice/Week3/Maze_201721164.c.i
+.PHONY : Practice/Week3/Maze_201721164.i
+
+# target to preprocess a source file
+Practice/Week3/Maze_201721164.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.i
+.PHONY : Practice/Week3/Maze_201721164.c.i
+
+Practice/Week3/Maze_201721164.s: Practice/Week3/Maze_201721164.c.s
+.PHONY : Practice/Week3/Maze_201721164.s
+
+# target to generate assembly for a file
+Practice/Week3/Maze_201721164.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.s
+.PHONY : Practice/Week3/Maze_201721164.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -762,6 +873,8 @@ help:
 	@echo "... BookPractice_Ch3_Ex6"
 	@echo "... BookPractice_Ch3_Ex7"
 	@echo "... BookPractice_Ch3_Ex8"
+	@echo "... BookPractice_Ch4_Ex1"
+	@echo "... BookPractice_Ch4_Ex2"
 	@echo "... Practice_Ch2_Ex1"
 	@echo "... Practice_Ch2_Ex2"
 	@echo "... Practice_Ch2_Ex3"
@@ -770,6 +883,7 @@ help:
 	@echo "... Practice_Ch2_Ex6"
 	@echo "... Practice_Ch2_Ex7"
 	@echo "... Practice_Ch2_Ex8"
+	@echo "... Practice_Week3_Maze1"
 	@echo "... BookPractice/Ch1/Ex1.o"
 	@echo "... BookPractice/Ch1/Ex1.i"
 	@echo "... BookPractice/Ch1/Ex1.s"
@@ -797,6 +911,12 @@ help:
 	@echo "... BookPractice/Ch3/Ex8.o"
 	@echo "... BookPractice/Ch3/Ex8.i"
 	@echo "... BookPractice/Ch3/Ex8.s"
+	@echo "... BookPractice/Ch4/Ex1.o"
+	@echo "... BookPractice/Ch4/Ex1.i"
+	@echo "... BookPractice/Ch4/Ex1.s"
+	@echo "... BookPractice/Ch4/Ex2.o"
+	@echo "... BookPractice/Ch4/Ex2.i"
+	@echo "... BookPractice/Ch4/Ex2.s"
 	@echo "... Practice/Week2/Ex1.o"
 	@echo "... Practice/Week2/Ex1.i"
 	@echo "... Practice/Week2/Ex1.s"
@@ -821,6 +941,9 @@ help:
 	@echo "... Practice/Week2/Ex8.o"
 	@echo "... Practice/Week2/Ex8.i"
 	@echo "... Practice/Week2/Ex8.s"
+	@echo "... Practice/Week3/Maze_201721164.o"
+	@echo "... Practice/Week3/Maze_201721164.i"
+	@echo "... Practice/Week3/Maze_201721164.s"
 .PHONY : help
 
 

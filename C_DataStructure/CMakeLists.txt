@@ -24,3 +24,7 @@ add_executable(BookPractice_Ch3_Ex5 BookPractice/Ch3/Ex5.c)
 add_executable(BookPractice_Ch3_Ex6 BookPractice/Ch3/Ex6.c)
 add_executable(BookPractice_Ch3_Ex7 BookPractice/Ch3/Ex7.c)
 add_executable(BookPractice_Ch3_Ex8 BookPractice/Ch3/Ex8.c)
+add_executable(BookPractice_Ch4_Ex1 BookPractice/Ch4/Ex1.c)
+add_executable(BookPractice_Ch4_Ex2 BookPractice/Ch4/Ex2.c)
+
+add_executable(Practice_Week3_Maze1 Practice/Week3/Maze_201721164.c)

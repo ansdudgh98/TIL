@@ -11,9 +11,12 @@
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex6.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch3_Ex2.dir
+/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch4_Ex2.dir
+/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch4_Ex1.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex1.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex4.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex2.dir
+/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Week3_Maze1.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch3_Ex6.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/BookPractice_Ch3_Ex3.dir
 /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles/Practice_Ch2_Ex5.dir
