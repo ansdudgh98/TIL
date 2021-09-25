@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/youngho/Desktop/TIL/C_DataStructure/Practice/Week3/Maze1.c
+/Users/youngho/Desktop/TIL/C_DataStructure/Practice/Week3/Maze_201721164.c
 stdio.h
 -
 stdlib.h
--
-string.h
 -
 
