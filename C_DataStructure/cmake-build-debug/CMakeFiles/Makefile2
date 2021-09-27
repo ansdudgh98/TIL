@@ -63,23 +63,28 @@ CMAKE_BINARY_DIR = /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/BookPractice_Ch5_Ex2.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex8.dir/all
+all: CMakeFiles/BookPractice_Ch5_Ex4.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex7.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex5.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex4.dir/all
+all: CMakeFiles/Practice_Ch2_Ex1.dir/all
 all: CMakeFiles/Practice_Ch2_Ex7.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex1.dir/all
+all: CMakeFiles/BookPractice_Ch5_Ex1.dir/all
 all: CMakeFiles/Practice_Ch2_Ex3.dir/all
 all: CMakeFiles/Practice_Ch2_Ex8.dir/all
 all: CMakeFiles/BookPractice_Ch1_Ex1.dir/all
 all: CMakeFiles/Practice_Ch2_Ex6.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex2.dir/all
+all: CMakeFiles/BookPractice_Ch5_Ex3.dir/all
 all: CMakeFiles/BookPractice_Ch4_Ex2.dir/all
 all: CMakeFiles/BookPractice_Ch4_Ex1.dir/all
-all: CMakeFiles/Practice_Ch2_Ex1.dir/all
 all: CMakeFiles/Practice_Ch2_Ex4.dir/all
 all: CMakeFiles/Practice_Ch2_Ex2.dir/all
 all: CMakeFiles/Practice_Week3_Maze1.dir/all
+all: CMakeFiles/BookPractice_Ch5_Ex5.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex6.dir/all
 all: CMakeFiles/BookPractice_Ch3_Ex3.dir/all
 all: CMakeFiles/Practice_Ch2_Ex5.dir/all
@@ -90,27 +95,58 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/BookPractice_Ch5_Ex2.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex8.dir/clean
+clean: CMakeFiles/BookPractice_Ch5_Ex4.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex7.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex5.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex4.dir/clean
+clean: CMakeFiles/Practice_Ch2_Ex1.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex7.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex1.dir/clean
+clean: CMakeFiles/BookPractice_Ch5_Ex1.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex3.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex8.dir/clean
 clean: CMakeFiles/BookPractice_Ch1_Ex1.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex6.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex2.dir/clean
+clean: CMakeFiles/BookPractice_Ch5_Ex3.dir/clean
 clean: CMakeFiles/BookPractice_Ch4_Ex2.dir/clean
 clean: CMakeFiles/BookPractice_Ch4_Ex1.dir/clean
-clean: CMakeFiles/Practice_Ch2_Ex1.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex4.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex2.dir/clean
 clean: CMakeFiles/Practice_Week3_Maze1.dir/clean
+clean: CMakeFiles/BookPractice_Ch5_Ex5.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex6.dir/clean
 clean: CMakeFiles/BookPractice_Ch3_Ex3.dir/clean
 clean: CMakeFiles/Practice_Ch2_Ex5.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch5_Ex2.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch5_Ex2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target BookPractice_Ch5_Ex2"
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch5_Ex2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch5_Ex2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex2.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch5_Ex2: CMakeFiles/BookPractice_Ch5_Ex2.dir/rule
+.PHONY : BookPractice_Ch5_Ex2
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch5_Ex2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex2.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BookPractice_Ch3_Ex8.dir
@@ -137,6 +173,32 @@ BookPractice_Ch3_Ex8: CMakeFiles/BookPractice_Ch3_Ex8.dir/rule
 CMakeFiles/BookPractice_Ch3_Ex8.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/clean
 .PHONY : CMakeFiles/BookPractice_Ch3_Ex8.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch5_Ex4.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch5_Ex4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target BookPractice_Ch5_Ex4"
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch5_Ex4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch5_Ex4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex4.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch5_Ex4: CMakeFiles/BookPractice_Ch5_Ex4.dir/rule
+.PHONY : BookPractice_Ch5_Ex4
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch5_Ex4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex4.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BookPractice_Ch3_Ex7.dir
@@ -217,13 +279,39 @@ CMakeFiles/BookPractice_Ch3_Ex4.dir/clean:
 .PHONY : CMakeFiles/BookPractice_Ch3_Ex4.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Practice_Ch2_Ex1.dir
+
+# All Build rule for target.
+CMakeFiles/Practice_Ch2_Ex1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target Practice_Ch2_Ex1"
+.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Practice_Ch2_Ex1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Practice_Ch2_Ex1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/rule
+
+# Convenience name for target.
+Practice_Ch2_Ex1: CMakeFiles/Practice_Ch2_Ex1.dir/rule
+.PHONY : Practice_Ch2_Ex1
+
+# clean rule for target.
+CMakeFiles/Practice_Ch2_Ex1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/clean
+.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Practice_Ch2_Ex7.dir
 
 # All Build rule for target.
 CMakeFiles/Practice_Ch2_Ex7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target Practice_Ch2_Ex7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target Practice_Ch2_Ex7"
 .PHONY : CMakeFiles/Practice_Ch2_Ex7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -269,13 +357,39 @@ CMakeFiles/BookPractice_Ch3_Ex1.dir/clean:
 .PHONY : CMakeFiles/BookPractice_Ch3_Ex1.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch5_Ex1.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch5_Ex1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target BookPractice_Ch5_Ex1"
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch5_Ex1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch5_Ex1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex1.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch5_Ex1: CMakeFiles/BookPractice_Ch5_Ex1.dir/rule
+.PHONY : BookPractice_Ch5_Ex1
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch5_Ex1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Practice_Ch2_Ex3.dir
 
 # All Build rule for target.
 CMakeFiles/Practice_Ch2_Ex3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target Practice_Ch2_Ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target Practice_Ch2_Ex3"
 .PHONY : CMakeFiles/Practice_Ch2_Ex3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -301,7 +415,7 @@ CMakeFiles/Practice_Ch2_Ex3.dir/clean:
 CMakeFiles/Practice_Ch2_Ex8.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target Practice_Ch2_Ex8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target Practice_Ch2_Ex8"
 .PHONY : CMakeFiles/Practice_Ch2_Ex8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -353,7 +467,7 @@ CMakeFiles/BookPractice_Ch1_Ex1.dir/clean:
 CMakeFiles/Practice_Ch2_Ex6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target Practice_Ch2_Ex6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target Practice_Ch2_Ex6"
 .PHONY : CMakeFiles/Practice_Ch2_Ex6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -397,6 +511,32 @@ BookPractice_Ch3_Ex2: CMakeFiles/BookPractice_Ch3_Ex2.dir/rule
 CMakeFiles/BookPractice_Ch3_Ex2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex2.dir/build.make CMakeFiles/BookPractice_Ch3_Ex2.dir/clean
 .PHONY : CMakeFiles/BookPractice_Ch3_Ex2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch5_Ex3.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch5_Ex3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target BookPractice_Ch5_Ex3"
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch5_Ex3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch5_Ex3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex3.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch5_Ex3: CMakeFiles/BookPractice_Ch5_Ex3.dir/rule
+.PHONY : BookPractice_Ch5_Ex3
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch5_Ex3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BookPractice_Ch4_Ex2.dir
@@ -451,39 +591,13 @@ CMakeFiles/BookPractice_Ch4_Ex1.dir/clean:
 .PHONY : CMakeFiles/BookPractice_Ch4_Ex1.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Practice_Ch2_Ex1.dir
-
-# All Build rule for target.
-CMakeFiles/Practice_Ch2_Ex1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target Practice_Ch2_Ex1"
-.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Practice_Ch2_Ex1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Practice_Ch2_Ex1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/rule
-
-# Convenience name for target.
-Practice_Ch2_Ex1: CMakeFiles/Practice_Ch2_Ex1.dir/rule
-.PHONY : Practice_Ch2_Ex1
-
-# clean rule for target.
-CMakeFiles/Practice_Ch2_Ex1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/clean
-.PHONY : CMakeFiles/Practice_Ch2_Ex1.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Practice_Ch2_Ex4.dir
 
 # All Build rule for target.
 CMakeFiles/Practice_Ch2_Ex4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target Practice_Ch2_Ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target Practice_Ch2_Ex4"
 .PHONY : CMakeFiles/Practice_Ch2_Ex4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -509,7 +623,7 @@ CMakeFiles/Practice_Ch2_Ex4.dir/clean:
 CMakeFiles/Practice_Ch2_Ex2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target Practice_Ch2_Ex2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target Practice_Ch2_Ex2"
 .PHONY : CMakeFiles/Practice_Ch2_Ex2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -535,7 +649,7 @@ CMakeFiles/Practice_Ch2_Ex2.dir/clean:
 CMakeFiles/Practice_Week3_Maze1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target Practice_Week3_Maze1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target Practice_Week3_Maze1"
 .PHONY : CMakeFiles/Practice_Week3_Maze1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -553,6 +667,32 @@ Practice_Week3_Maze1: CMakeFiles/Practice_Week3_Maze1.dir/rule
 CMakeFiles/Practice_Week3_Maze1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/clean
 .PHONY : CMakeFiles/Practice_Week3_Maze1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BookPractice_Ch5_Ex5.dir
+
+# All Build rule for target.
+CMakeFiles/BookPractice_Ch5_Ex5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target BookPractice_Ch5_Ex5"
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BookPractice_Ch5_Ex5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookPractice_Ch5_Ex5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex5.dir/rule
+
+# Convenience name for target.
+BookPractice_Ch5_Ex5: CMakeFiles/BookPractice_Ch5_Ex5.dir/rule
+.PHONY : BookPractice_Ch5_Ex5
+
+# clean rule for target.
+CMakeFiles/BookPractice_Ch5_Ex5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/clean
+.PHONY : CMakeFiles/BookPractice_Ch5_Ex5.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BookPractice_Ch3_Ex6.dir
@@ -613,7 +753,7 @@ CMakeFiles/BookPractice_Ch3_Ex3.dir/clean:
 CMakeFiles/Practice_Ch2_Ex5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target Practice_Ch2_Ex5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target Practice_Ch2_Ex5"
 .PHONY : CMakeFiles/Practice_Ch2_Ex5.dir/all
 
 # Build rule for subdir invocation for target.

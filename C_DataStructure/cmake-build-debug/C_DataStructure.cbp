@@ -27,6 +27,54 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex2">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex2/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="BookPractice_Ch3_Ex8">
 				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch3_Ex8" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
@@ -60,6 +108,44 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch3_Ex8/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex4">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex4"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex4/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex4/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -179,6 +265,44 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Practice_Ch2_Ex1">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Practice_Ch2_Ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Practice_Ch2_Ex1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Practice_Ch2_Ex1/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Practice_Ch2_Ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Practice_Ch2_Ex1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Practice_Ch2_Ex7">
 				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Practice_Ch2_Ex7" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
@@ -250,6 +374,44 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch3_Ex1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex1">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex1/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex1/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -407,16 +569,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="BookPractice_Ch3_Ex2">
 				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch3_Ex2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
@@ -450,6 +602,44 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch3_Ex2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex3">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex3/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex3/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -526,44 +716,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch4_Ex1/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Practice_Ch2_Ex1">
-				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Practice_Ch2_Ex1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Practice_Ch2_Ex1"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Practice_Ch2_Ex1/fast">
-				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Practice_Ch2_Ex1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Practice_Ch2_Ex1/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -678,6 +830,44 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Practice_Week3_Maze1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex5">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex5"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BookPractice_Ch5_Ex5/fast">
+				<Option output="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/BookPractice_Ch5_Ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 BookPractice_Ch5_Ex5/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -830,6 +1020,21 @@
 		</Unit>
 		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch4/Ex2.c">
 			<Option target="BookPractice_Ch4_Ex2"/>
+		</Unit>
+		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch5/Ex1.c">
+			<Option target="BookPractice_Ch5_Ex1"/>
+		</Unit>
+		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch5/Ex2.c">
+			<Option target="BookPractice_Ch5_Ex2"/>
+		</Unit>
+		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch5/Ex3.c">
+			<Option target="BookPractice_Ch5_Ex3"/>
+		</Unit>
+		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch5/Ex4.c">
+			<Option target="BookPractice_Ch5_Ex4"/>
+		</Unit>
+		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/BookPractice/Ch5/Ex5.c">
+			<Option target="BookPractice_Ch5_Ex5"/>
 		</Unit>
 		<Unit filename="/Users/youngho/Desktop/TIL/C_DataStructure/Practice/Week2/Ex1.c">
 			<Option target="Practice_Ch2_Ex1"/>
