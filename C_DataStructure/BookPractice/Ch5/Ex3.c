@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_QUEUE_SIZE 5
+#define MAX_QUEUE_SIZE 9
 
 typedef int element;
 typedef struct {

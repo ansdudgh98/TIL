@@ -73,8 +73,7 @@ int main(void){
     printf("--데이터 추가 단계--\n");
     while (!is_full(&queue)){
         printf("정수를 입력하세요:");
-        scanf("%d",&element);
-        enqueue(&queue,element);
+        enqueue(&queue,1);
         queue_print(&queue);
     }
 

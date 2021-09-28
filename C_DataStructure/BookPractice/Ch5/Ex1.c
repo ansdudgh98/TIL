@@ -81,13 +81,22 @@ int main(void){
     enqueue(&q,30);
     queue_print(&q);
 
-    item = dequeue(&q);
+    enqueue(&q,40);
+    queue_print(&q);
+
+    enqueue(&q,50);
     queue_print(&q);
 
     item = dequeue(&q);
     queue_print(&q);
 
     item = dequeue(&q);
+    queue_print(&q);
+
+    enqueue(&q,70);
+    queue_print(&q);
+
+    enqueue(&q,80);
     queue_print(&q);
 
     return 0;
