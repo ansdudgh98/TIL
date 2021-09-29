@@ -45,7 +45,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Practice_Week4_Ex8.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_LabEx4.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_LabEx1.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_LabEx2.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_Ex2.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Week4_Ex7.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Week4_Ex6.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch5_Ex2.dir/DependInfo.cmake"
@@ -64,10 +67,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BookPractice_Ch1_Ex1.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Ch2_Ex6.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch3_Ex2.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_Ex1.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch5_Ex3.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch4_Ex2.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch4_Ex1.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Ch2_Ex4.dir/DependInfo.cmake"
+  "CMakeFiles/BookPractice_Ch6_LabEx3.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Ch2_Ex2.dir/DependInfo.cmake"
   "CMakeFiles/Practice_Week3_Maze1.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch5_Ex5.dir/DependInfo.cmake"
