@@ -45,6 +45,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/Practice_Week5_Ex4.dir/DependInfo.cmake"
+  "CMakeFiles/Practice_Week5_Ex3.dir/DependInfo.cmake"
+  "CMakeFiles/Practice_Week5_Ex2.dir/DependInfo.cmake"
+  "CMakeFiles/Practice_Week5_Ex1.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch6_LabEx4.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch6_LabEx1.dir/DependInfo.cmake"
   "CMakeFiles/BookPractice_Ch6_LabEx2.dir/DependInfo.cmake"

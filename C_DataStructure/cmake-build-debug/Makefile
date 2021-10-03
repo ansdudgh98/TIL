@@ -117,6 +117,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Practice_Week5_Ex4
+
+# Build rule for target.
+Practice_Week5_Ex4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex4
+.PHONY : Practice_Week5_Ex4
+
+# fast build rule for target.
+Practice_Week5_Ex4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/build
+.PHONY : Practice_Week5_Ex4/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Week5_Ex3
+
+# Build rule for target.
+Practice_Week5_Ex3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex3
+.PHONY : Practice_Week5_Ex3
+
+# fast build rule for target.
+Practice_Week5_Ex3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/build
+.PHONY : Practice_Week5_Ex3/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Week5_Ex2
+
+# Build rule for target.
+Practice_Week5_Ex2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex2
+.PHONY : Practice_Week5_Ex2
+
+# fast build rule for target.
+Practice_Week5_Ex2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/build
+.PHONY : Practice_Week5_Ex2/fast
+
+#=============================================================================
+# Target rules for targets named Practice_Week5_Ex1
+
+# Build rule for target.
+Practice_Week5_Ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex1
+.PHONY : Practice_Week5_Ex1
+
+# fast build rule for target.
+Practice_Week5_Ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/build
+.PHONY : Practice_Week5_Ex1/fast
+
+#=============================================================================
 # Target rules for targets named BookPractice_Ch6_LabEx4
 
 # Build rule for target.
@@ -1374,6 +1426,102 @@ Practice/Week4/Ex7.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex7.dir/build.make CMakeFiles/Practice_Week4_Ex7.dir/Practice/Week4/Ex7.c.s
 .PHONY : Practice/Week4/Ex7.c.s
 
+Practice/Week5/Ex1.o: Practice/Week5/Ex1.c.o
+.PHONY : Practice/Week5/Ex1.o
+
+# target to build an object file
+Practice/Week5/Ex1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.o
+.PHONY : Practice/Week5/Ex1.c.o
+
+Practice/Week5/Ex1.i: Practice/Week5/Ex1.c.i
+.PHONY : Practice/Week5/Ex1.i
+
+# target to preprocess a source file
+Practice/Week5/Ex1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.i
+.PHONY : Practice/Week5/Ex1.c.i
+
+Practice/Week5/Ex1.s: Practice/Week5/Ex1.c.s
+.PHONY : Practice/Week5/Ex1.s
+
+# target to generate assembly for a file
+Practice/Week5/Ex1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.s
+.PHONY : Practice/Week5/Ex1.c.s
+
+Practice/Week5/Ex2.o: Practice/Week5/Ex2.c.o
+.PHONY : Practice/Week5/Ex2.o
+
+# target to build an object file
+Practice/Week5/Ex2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.o
+.PHONY : Practice/Week5/Ex2.c.o
+
+Practice/Week5/Ex2.i: Practice/Week5/Ex2.c.i
+.PHONY : Practice/Week5/Ex2.i
+
+# target to preprocess a source file
+Practice/Week5/Ex2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.i
+.PHONY : Practice/Week5/Ex2.c.i
+
+Practice/Week5/Ex2.s: Practice/Week5/Ex2.c.s
+.PHONY : Practice/Week5/Ex2.s
+
+# target to generate assembly for a file
+Practice/Week5/Ex2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.s
+.PHONY : Practice/Week5/Ex2.c.s
+
+Practice/Week5/Ex3.o: Practice/Week5/Ex3.c.o
+.PHONY : Practice/Week5/Ex3.o
+
+# target to build an object file
+Practice/Week5/Ex3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.o
+.PHONY : Practice/Week5/Ex3.c.o
+
+Practice/Week5/Ex3.i: Practice/Week5/Ex3.c.i
+.PHONY : Practice/Week5/Ex3.i
+
+# target to preprocess a source file
+Practice/Week5/Ex3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.i
+.PHONY : Practice/Week5/Ex3.c.i
+
+Practice/Week5/Ex3.s: Practice/Week5/Ex3.c.s
+.PHONY : Practice/Week5/Ex3.s
+
+# target to generate assembly for a file
+Practice/Week5/Ex3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.s
+.PHONY : Practice/Week5/Ex3.c.s
+
+Practice/Week5/Ex4.o: Practice/Week5/Ex4.c.o
+.PHONY : Practice/Week5/Ex4.o
+
+# target to build an object file
+Practice/Week5/Ex4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.o
+.PHONY : Practice/Week5/Ex4.c.o
+
+Practice/Week5/Ex4.i: Practice/Week5/Ex4.c.i
+.PHONY : Practice/Week5/Ex4.i
+
+# target to preprocess a source file
+Practice/Week5/Ex4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.i
+.PHONY : Practice/Week5/Ex4.c.i
+
+Practice/Week5/Ex4.s: Practice/Week5/Ex4.c.s
+.PHONY : Practice/Week5/Ex4.s
+
+# target to generate assembly for a file
+Practice/Week5/Ex4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.s
+.PHONY : Practice/Week5/Ex4.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1416,6 +1564,10 @@ help:
 	@echo "... Practice_Week3_Maze1"
 	@echo "... Practice_Week4_Ex6"
 	@echo "... Practice_Week4_Ex7"
+	@echo "... Practice_Week5_Ex1"
+	@echo "... Practice_Week5_Ex2"
+	@echo "... Practice_Week5_Ex3"
+	@echo "... Practice_Week5_Ex4"
 	@echo "... BookPractice/Ch1/Ex1.o"
 	@echo "... BookPractice/Ch1/Ex1.i"
 	@echo "... BookPractice/Ch1/Ex1.s"
@@ -1518,6 +1670,18 @@ help:
 	@echo "... Practice/Week4/Ex7.o"
 	@echo "... Practice/Week4/Ex7.i"
 	@echo "... Practice/Week4/Ex7.s"
+	@echo "... Practice/Week5/Ex1.o"
+	@echo "... Practice/Week5/Ex1.i"
+	@echo "... Practice/Week5/Ex1.s"
+	@echo "... Practice/Week5/Ex2.o"
+	@echo "... Practice/Week5/Ex2.i"
+	@echo "... Practice/Week5/Ex2.s"
+	@echo "... Practice/Week5/Ex3.o"
+	@echo "... Practice/Week5/Ex3.i"
+	@echo "... Practice/Week5/Ex3.s"
+	@echo "... Practice/Week5/Ex4.o"
+	@echo "... Practice/Week5/Ex4.i"
+	@echo "... Practice/Week5/Ex4.s"
 .PHONY : help
 
 

@@ -1,12 +1,17 @@
 //
-// Created by 문영호 on 2021/09/29.
+// Created by 문영호 on 2021/10/03.
 //
 
+//
+// Created by 문영호 on 2021/09/29.
+//
 #include <stdlib.h>
 #include <string.h>
 #include "stdio.h"
 
-typedef int element;
+typedef struct {
+    char name[100];
+}element;
 
 typedef struct ListNode{
     element data;
@@ -49,44 +54,34 @@ ListNode delete(ListNode *head,ListNode *pre){
 
 void print_list(ListNode *head){
     for(ListNode *p= head;p!=NULL;p=p->link){
-        printf("%d->",p->data);
+        printf("%s->",p->data.name);
 
     }
     printf("NULL\n");
 }
 
-
-
-ListNode* search_list(ListNode *head,element x){
-    ListNode *p = head;
-
-    while(!p==NULL){
-        if(p->data == x) return p;
-        p= p->link;
-    }
-
-    return NULL;
-}
-
-
 int main(void){
     ListNode *head = NULL;
     element data;
 
-    head = insert_first(head,10);
+    strcpy(data.name,"APPLE");
+    head = insert_first(head,data);
     print_list(head);
 
-    head = insert_first(head,20);
+    strcpy(data.name,"BANANA");
+    head = insert_first(head,data);
     print_list(head);
 
-    head = insert_first(head,30);
+    strcpy(data.name,"KIWI");
+    head = insert_first(head,data);
     print_list(head);
-    if(search_list(head,30) != NULL)
-        printf("리스트에서 30을 찾았습니다..");
-    else
-        printf("찾지 못했습니다...");
 
-    return 0;
+    strcpy(data.name,"TOMATO");
+    head = insert_first(head,data);
+    print_list(head);
 
+    strcpy(data.name,"WATERMELON");
+    head = insert_first(head,data);
+    print_list(head);
 
 }

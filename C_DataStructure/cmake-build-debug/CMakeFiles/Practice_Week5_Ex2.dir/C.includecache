@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youngho/Desktop/TIL/C_DataStructure/Practice/Week5/Ex2.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+/Users/youngho/Desktop/TIL/C_DataStructure/Practice/Week5/stdio.h
+
