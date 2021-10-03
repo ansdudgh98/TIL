@@ -17,13 +17,6 @@ typedef struct ListNode{
     struct ListNode *link;
 }ListNode;
 
-/*ListNode delete(ListNode *head,ListNode *pre){
-    ListNode *removed;
-    removed = pre->link;
-    pre->link = removed->link;
-    free(removed);
-    return *head;
-}*/
 
 void print_list(ListNode *head){
     for(ListNode *p= head;p!=NULL;p=p->link){
@@ -41,34 +34,31 @@ ListNode* insert_first(ListNode *head,element value){
     return head;
 }
 
-void delete_first(ListNode *head){
-    ListNode *removed = head->link;
-    head ->link = removed->link;
-    free(removed);
-}
 
-ListNode* select_delete(ListNode *head,element x){
-    ListNode *p = head;
-    ListNode *d = NULL;
-    while(!p==NULL){
-        if(p->data == x) {
-           head->link = p->link;
+void select_delete(ListNode *head,element x){
 
-            return p;
-        }
-        p= p->link;
+   ListNode *p = head;
+   ListNode *d = head;
+   d = d->link;
+   while(!d==NULL){
+       if((d->data)==x){
+           p->link = d->link;
+           free(d);
+           break;
+       }
+       p = d;
+       d=d->link;
+   }
+
     }
 
-    return NULL;
-}
+
 
 
 int main(void){
     ListNode *head = NULL;
     element data;
     ListNode *deleteelement=NULL;
-
-
     int input;
     printf("노드의 갯수:");
     scanf("%d",&input);
@@ -84,8 +74,7 @@ int main(void){
     printf("삭제할 값을 입력하세요:");
     scanf("%d",&input);
 
-    deleteelement = select_delete(head,input);
-    print_list(deleteelement);
+    select_delete(head,input);
     print_list(head);
 
 
