@@ -4,6 +4,7 @@
 
 ### 운영체제란(Operation System)?
 - 컴퓨터의 하드웨어를 관리하는 소프트웨어
+
 - 응용프로그램 사용을 위한 기반을 제공하며 사용자와 하드웨어 사이의 중재자 역활을 수행함
 
 ### 운영체제의 목표(Operation System goals)
@@ -167,6 +168,9 @@ device controllers connet through common bus providing access to shared memory)
 - 다른 디바이스나 혹은 프로그램의 상태를 지속적으로 제크한다.
 - 응답을 기다리는 동안 CPU사이클의 낭비를 유발한다.(다른 프로그램의 polling이 지속되는 동안 실행할수없음.)
 
+![IMG_4.jpeg](Image/IMG_4.jpeg)
+
+
 4.Stoage Structure
 
 -Main memory
@@ -178,6 +182,9 @@ device controllers connet through common bus providing access to shared memory)
 - 큰 비휘발성 메모리의 저장공간을 메인 메모리의 확장 공간으로 제공한다.
 - HDD,SSD,FLASH,ETC
 
+![img.png](Image/img_5.png)
+
+
 5.Definition of Computer System Components
 
 - CPU: 명령어를 실행하는 하드웨어
@@ -187,3 +194,165 @@ device controllers connet through common bus providing access to shared memory)
 - MultiProcessor : 멀티 프로세서를 포함하는것 
 
 
+![img.png](Image/IMG_6.jpeg)
+![img.png](Image/IMG_7.jpeg)
+
+### Real-time System
+-Real-time OS는 고정된 시간 제한을 잘 정의되어지게 가지고있다.
+(Real-time OS has well-defined fixed time Constraints)
+- Processing는 제한 안으로 종료해야한다.
+
+1.Hard real-time System
+
+- 무조건 데드라인을 맞춰야한다.
+
+2.Soft real-time System
+
+- 여전히 데드라인을 맞추는 것은 중요하다. 
+
+### Computer Architecture
+
+- Instruction Set Architecture(ISA) + Memory model,registers...
+
+-Instruction Set Architecture(ISA)
+- Interface between hardware and software
+- EX)Alpha,RISC-V,ARM,X86....
+
+
+#### Von Neumann Architecture (폰 노이만 아키텍쳐)
+
+
+![img.png](Image/img8.png)
+
+![img.png](Image/img9.png)
+
+
+#### Overall Architecture of CPU
+
+![img.png](Image/img_10.png)
+
+-CPU Operation
+
+☐Instruction Fetch
+- 메모리에서 수행되어지는 명령어들을 읽는 것
+
+☐Instruction Decode
+- 명령어에 의해 수행된게 무엇인지 밝히는 것
+
+☐Excute(Ex)
+- 명령어를 수행하는것
+- Ex)ALU/Updating Registers
+
+-Components of CPU
+
+☐Arithmetic Logic Unit(ALU)
+- Arithmetic Operations(+,-,X,/)
+- 산수 연산
+- Logic operations(&,|,~)
+- 논리연산
+
+☐Control Unit(CU)
+- 명령어의 흐름을 제어하는 것
+
+☐Register(or Register set)
+- CPU 안에있는 빠르고 작은 저장공간
+- 일시적인 ALU연산/정보의 제어을(를) 위한 저장공간
+- 특수 목적 레지스터(Special purpose register:IR,PC,SP....)
+- 일반적인 목적 레지스터 (General purpose register : X0,X1,X2...)
+
+-Register
+
+☐ Program Counter(PC)
+- 다음에 가져올 명령어의 주소를 포함하는 것
+- 명령어를 가져올 경우 PC는 명령어의 사이즈 만큼 증가하게 된다.
+
+☐ Status Register(SR) or Flag Register
+- CPU의 상태를 나타낸다.
+- Carry,Zero,Negative,Overflow
+
+☐ Stack Pointer(SP) or Stack Control Register
+- 현재 스택 위치를 가리키는 것 
+
+
+-Instruction
+- Instruction은 피명령어(Operand)와 연산구조(Opcode)로 이루어져 있다.
+
+->Operand는 데이터 또는 주소,레지스터의 숫자를 의미한다.
+
+->Opcode는 명령어의 종류를 의미한다.
+
+- Machine Langauage VS Assembly Language
+
+->Binary Code vs Human readable
+
+-Type of Instruction
+
+☐ Data Processing(ALU)
+- 산수 연산
+- 논리 연산
+
+☐ Load/Store
+- 레지스터와 메모리 사이
+
+☐ Branch
+- 다음 멍령어의 주소를 바꾸는 것
+- Contitional Branch
+- Unconditional Branch
+- Miscellaneous
+
+#### Cache
+
+☐이상적인 메모리
+- 무한대의 사이즈와 즉시 사용가능한 것
+- Size <-> Access Time / Access Time <-> Cost 라는 트레이드-오프가 발생함
+
+☐Locality
+- Spatial Locality(공간 지역성) => Array/Table
+- Temporal Locality(일시적 지역성) => Loop/Function
+
+☐Cache
+- CPU 와 memory사이의의 사용성과 지역성을 증가시켜 주기위한 저장공간
+
+☐ Memory hierarchy
+
+## CPU => Cache => Main Memory
+
+### Operation System Structrue
+
+-----------
+
+# 운영체제 2장
+
+
+-----------
+
+-Abstract View of Component of Computer
+
+![img.png](Image/img10.png)
+
+
+-user interface
+- Command-Line(CLI),Graphic User Interface(GUI),Touch-Screen,Batch
+
+-Program execution
+- Load a program into memory and to run that program and execution
+
+-I/O operations
+
+-File System
+- Read/Write/Create/Delete/Search files and directories
+- List file Information
+- Permission management
+
+-Communications
+- Exchange information,on the same computer or between computers over a network
+
+-Resource allocation
+- Multiple users or multiple jobs running concurrently
+
+-Protection and security
+- Preventing interference with each other or invalid access
+
+-System calls 
+- OS에 의해 제공 되어지는 프로그래밍 인터페이스 서비스
+- high-level Application Programming interface가 직접적인 시스템 콜 사용보다 대부분 허용되어진다.
