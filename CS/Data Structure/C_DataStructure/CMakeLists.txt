@@ -6,16 +6,17 @@ set(CMAKE_C_STANDARD 11)
 #[[
 add_executable(C_DataStructure main.c Practice/Ex1.c Practice/Ex2.c Practice/Ex3.c Practice/Ex4.c Practice/Ex5.c Practice/Ex6.c Practice/Ex7.c Practice/Ex8.c Practice/Ex9.c Practice/Ex10.c)
 ]]
-
-add_executable(Practice_Ch2_Ex1 Practice/Week2/Ex1.c)
+# 실습예제 2장 주석
+#[[add_executable(Practice_Ch2_Ex1 Practice/Week2/Ex1.c)
 add_executable(Practice_Ch2_Ex2 Practice/Week2/Ex2.c)
 add_executable(Practice_Ch2_Ex3 Practice/Week2/Ex3.c)
 add_executable(Practice_Ch2_Ex4 Practice/Week2/Ex4.c)
 add_executable(Practice_Ch2_Ex5 Practice/Week2/Ex5.c)
 add_executable(Practice_Ch2_Ex6 Practice/Week2/Ex6.c)
 add_executable(Practice_Ch2_Ex8 Practice/Week2/Ex8.c)
-add_executable(Practice_Ch2_Ex7 Practice/Week2/Ex7.c)
-add_executable(BookPractice_Ch1_Ex1 BookPractice/Ch1/Ex1.c)
+add_executable(Practice_Ch2_Ex7 Practice/Week2/Ex7.c)]]
+#책 3장 주석
+#[[add_executable(BookPractice_Ch1_Ex1 BookPractice/Ch1/Ex1.c)
 add_executable(BookPractice_Ch3_Ex1 BookPractice/Ch3/Ex1.c)
 add_executable(BookPractice_Ch3_Ex2 BookPractice/Ch3/Ex2.c)
 add_executable(BookPractice_Ch3_Ex3 BookPractice/Ch3/Ex3.c)
@@ -25,8 +26,9 @@ add_executable(BookPractice_Ch3_Ex6 BookPractice/Ch3/Ex6.c)
 add_executable(BookPractice_Ch3_Ex7 BookPractice/Ch3/Ex7.c)
 add_executable(BookPractice_Ch3_Ex8 BookPractice/Ch3/Ex8.c)
 add_executable(BookPractice_Ch4_Ex1 BookPractice/Ch4/Ex1.c)
-add_executable(BookPractice_Ch4_Ex2 BookPractice/Ch4/Ex2.c)
-add_executable(Practice_Week3_Maze1 Practice/Week3/Maze_201721164.c)
+add_executable(BookPractice_Ch4_Ex2 BookPractice/Ch4/Ex2.c)]]
+#5,6주차 주석
+#[[add_executable(Practice_Week3_Maze1 Practice/Week3/Maze_201721164.c)
 add_executable(BookPractice_Ch5_Ex1 BookPractice/Ch5/Ex1.c)
 add_executable(BookPractice_Ch5_Ex2 BookPractice/Ch5/Ex2.c)
 add_executable(BookPractice_Ch5_Ex3 BookPractice/Ch5/Ex3.c)
@@ -45,3 +47,11 @@ add_executable(Practice_Week5_Ex1 Practice/Week5/Ex1.c)
 add_executable(Practice_Week5_Ex2 Practice/Week5/Ex2.c)
 add_executable(Practice_Week5_Ex3 Practice/Week5/Ex3.c)
 add_executable(Practice_Week5_Ex4 Practice/Week5/Ex4.c)
+add_executable(BookPractice_Ch6_Ex3 BookPractice/Ch6/Ex3.c)]]
+add_executable(BookPractice_Ch7_Ex1 BookPractice/Ch7/Ex1.c)
+add_executable(BookPractice_Ch7_Ex2 BookPractice/Ch7/Ex2.c)
+add_executable(BookPractice_Ch7_Ex3 BookPractice/Ch7/Ex3.c)
+add_executable(BookPractice_Ch7_Ex4 BookPractice/Ch7/Ex4.c)
+add_executable(BookPractice_Ch7_Ex5 BookPractice/Ch7/Ex5.c)
+add_executable(BookPractice_Ch7_Ex6 BookPractice/Ch7/Ex6.c)
+add_executable(BookPractice_Ch7_Ex7 BookPractice/Ch7/Ex7.c)

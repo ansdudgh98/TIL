@@ -57,23 +57,13 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngho/Desktop/TIL/C_DataStructure
+CMAKE_SOURCE_DIR = "/Users/youngho/Desktop/TIL/CS/Data Structure/C_DataStructure"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/youngho/Desktop/TIL/CS/Data Structure/C_DataStructure/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -85,11 +75,21 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/youngho/Desktop/TIL/CS/Data Structure/C_DataStructure/cmake-build-debug/CMakeFiles" "/Users/youngho/Desktop/TIL/CS/Data Structure/C_DataStructure/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngho/Desktop/TIL/C_DataStructure/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/youngho/Desktop/TIL/CS/Data Structure/C_DataStructure/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,1410 +117,263 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Practice_Week5_Ex4
+# Target rules for targets named BookPractice_Ch7_Ex7
 
 # Build rule for target.
-Practice_Week5_Ex4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex4
-.PHONY : Practice_Week5_Ex4
+BookPractice_Ch7_Ex7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex7
+.PHONY : BookPractice_Ch7_Ex7
 
 # fast build rule for target.
-Practice_Week5_Ex4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/build
-.PHONY : Practice_Week5_Ex4/fast
+BookPractice_Ch7_Ex7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex7.dir/build.make CMakeFiles/BookPractice_Ch7_Ex7.dir/build
+.PHONY : BookPractice_Ch7_Ex7/fast
 
 #=============================================================================
-# Target rules for targets named Practice_Week5_Ex3
+# Target rules for targets named BookPractice_Ch7_Ex6
 
 # Build rule for target.
-Practice_Week5_Ex3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex3
-.PHONY : Practice_Week5_Ex3
+BookPractice_Ch7_Ex6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex6
+.PHONY : BookPractice_Ch7_Ex6
 
 # fast build rule for target.
-Practice_Week5_Ex3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/build
-.PHONY : Practice_Week5_Ex3/fast
+BookPractice_Ch7_Ex6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex6.dir/build.make CMakeFiles/BookPractice_Ch7_Ex6.dir/build
+.PHONY : BookPractice_Ch7_Ex6/fast
 
 #=============================================================================
-# Target rules for targets named Practice_Week5_Ex2
+# Target rules for targets named BookPractice_Ch7_Ex4
 
 # Build rule for target.
-Practice_Week5_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex2
-.PHONY : Practice_Week5_Ex2
+BookPractice_Ch7_Ex4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex4
+.PHONY : BookPractice_Ch7_Ex4
 
 # fast build rule for target.
-Practice_Week5_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/build
-.PHONY : Practice_Week5_Ex2/fast
+BookPractice_Ch7_Ex4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex4.dir/build.make CMakeFiles/BookPractice_Ch7_Ex4.dir/build
+.PHONY : BookPractice_Ch7_Ex4/fast
 
 #=============================================================================
-# Target rules for targets named Practice_Week5_Ex1
+# Target rules for targets named BookPractice_Ch7_Ex3
 
 # Build rule for target.
-Practice_Week5_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week5_Ex1
-.PHONY : Practice_Week5_Ex1
+BookPractice_Ch7_Ex3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex3
+.PHONY : BookPractice_Ch7_Ex3
 
 # fast build rule for target.
-Practice_Week5_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/build
-.PHONY : Practice_Week5_Ex1/fast
+BookPractice_Ch7_Ex3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex3.dir/build.make CMakeFiles/BookPractice_Ch7_Ex3.dir/build
+.PHONY : BookPractice_Ch7_Ex3/fast
 
 #=============================================================================
-# Target rules for targets named BookPractice_Ch6_LabEx4
+# Target rules for targets named BookPractice_Ch7_Ex5
 
 # Build rule for target.
-BookPractice_Ch6_LabEx4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_LabEx4
-.PHONY : BookPractice_Ch6_LabEx4
+BookPractice_Ch7_Ex5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex5
+.PHONY : BookPractice_Ch7_Ex5
 
 # fast build rule for target.
-BookPractice_Ch6_LabEx4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx4.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx4.dir/build
-.PHONY : BookPractice_Ch6_LabEx4/fast
+BookPractice_Ch7_Ex5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex5.dir/build.make CMakeFiles/BookPractice_Ch7_Ex5.dir/build
+.PHONY : BookPractice_Ch7_Ex5/fast
 
 #=============================================================================
-# Target rules for targets named BookPractice_Ch6_LabEx1
+# Target rules for targets named BookPractice_Ch7_Ex2
 
 # Build rule for target.
-BookPractice_Ch6_LabEx1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_LabEx1
-.PHONY : BookPractice_Ch6_LabEx1
+BookPractice_Ch7_Ex2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex2
+.PHONY : BookPractice_Ch7_Ex2
 
 # fast build rule for target.
-BookPractice_Ch6_LabEx1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx1.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx1.dir/build
-.PHONY : BookPractice_Ch6_LabEx1/fast
+BookPractice_Ch7_Ex2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex2.dir/build.make CMakeFiles/BookPractice_Ch7_Ex2.dir/build
+.PHONY : BookPractice_Ch7_Ex2/fast
 
 #=============================================================================
-# Target rules for targets named BookPractice_Ch6_LabEx2
+# Target rules for targets named BookPractice_Ch7_Ex1
 
 # Build rule for target.
-BookPractice_Ch6_LabEx2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_LabEx2
-.PHONY : BookPractice_Ch6_LabEx2
+BookPractice_Ch7_Ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch7_Ex1
+.PHONY : BookPractice_Ch7_Ex1
 
 # fast build rule for target.
-BookPractice_Ch6_LabEx2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx2.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx2.dir/build
-.PHONY : BookPractice_Ch6_LabEx2/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch6_Ex2
-
-# Build rule for target.
-BookPractice_Ch6_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_Ex2
-.PHONY : BookPractice_Ch6_Ex2
-
-# fast build rule for target.
-BookPractice_Ch6_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex2.dir/build.make CMakeFiles/BookPractice_Ch6_Ex2.dir/build
-.PHONY : BookPractice_Ch6_Ex2/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Week4_Ex7
-
-# Build rule for target.
-Practice_Week4_Ex7: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week4_Ex7
-.PHONY : Practice_Week4_Ex7
-
-# fast build rule for target.
-Practice_Week4_Ex7/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex7.dir/build.make CMakeFiles/Practice_Week4_Ex7.dir/build
-.PHONY : Practice_Week4_Ex7/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Week4_Ex6
-
-# Build rule for target.
-Practice_Week4_Ex6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week4_Ex6
-.PHONY : Practice_Week4_Ex6
-
-# fast build rule for target.
-Practice_Week4_Ex6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex6.dir/build.make CMakeFiles/Practice_Week4_Ex6.dir/build
-.PHONY : Practice_Week4_Ex6/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_Ex2
-
-# Build rule for target.
-BookPractice_Ch5_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_Ex2
-.PHONY : BookPractice_Ch5_Ex2
-
-# fast build rule for target.
-BookPractice_Ch5_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/build
-.PHONY : BookPractice_Ch5_Ex2/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex8
-
-# Build rule for target.
-BookPractice_Ch3_Ex8: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex8
-.PHONY : BookPractice_Ch3_Ex8
-
-# fast build rule for target.
-BookPractice_Ch3_Ex8/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/build
-.PHONY : BookPractice_Ch3_Ex8/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_Ex4
-
-# Build rule for target.
-BookPractice_Ch5_Ex4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_Ex4
-.PHONY : BookPractice_Ch5_Ex4
-
-# fast build rule for target.
-BookPractice_Ch5_Ex4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/build
-.PHONY : BookPractice_Ch5_Ex4/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex7
-
-# Build rule for target.
-BookPractice_Ch3_Ex7: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex7
-.PHONY : BookPractice_Ch3_Ex7
-
-# fast build rule for target.
-BookPractice_Ch3_Ex7/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex7.dir/build.make CMakeFiles/BookPractice_Ch3_Ex7.dir/build
-.PHONY : BookPractice_Ch3_Ex7/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex5
-
-# Build rule for target.
-BookPractice_Ch3_Ex5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex5
-.PHONY : BookPractice_Ch3_Ex5
-
-# fast build rule for target.
-BookPractice_Ch3_Ex5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex5.dir/build.make CMakeFiles/BookPractice_Ch3_Ex5.dir/build
-.PHONY : BookPractice_Ch3_Ex5/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex4
-
-# Build rule for target.
-BookPractice_Ch3_Ex4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex4
-.PHONY : BookPractice_Ch3_Ex4
-
-# fast build rule for target.
-BookPractice_Ch3_Ex4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex4.dir/build.make CMakeFiles/BookPractice_Ch3_Ex4.dir/build
-.PHONY : BookPractice_Ch3_Ex4/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex1
-
-# Build rule for target.
-Practice_Ch2_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex1
-.PHONY : Practice_Ch2_Ex1
-
-# fast build rule for target.
-Practice_Ch2_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/build
-.PHONY : Practice_Ch2_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex7
-
-# Build rule for target.
-Practice_Ch2_Ex7: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex7
-.PHONY : Practice_Ch2_Ex7
-
-# fast build rule for target.
-Practice_Ch2_Ex7/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/build
-.PHONY : Practice_Ch2_Ex7/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_deque
-
-# Build rule for target.
-BookPractice_Ch5_deque: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_deque
-.PHONY : BookPractice_Ch5_deque
-
-# fast build rule for target.
-BookPractice_Ch5_deque/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_deque.dir/build.make CMakeFiles/BookPractice_Ch5_deque.dir/build
-.PHONY : BookPractice_Ch5_deque/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex1
-
-# Build rule for target.
-BookPractice_Ch3_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex1
-.PHONY : BookPractice_Ch3_Ex1
-
-# fast build rule for target.
-BookPractice_Ch3_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex1.dir/build.make CMakeFiles/BookPractice_Ch3_Ex1.dir/build
-.PHONY : BookPractice_Ch3_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_Ex1
-
-# Build rule for target.
-BookPractice_Ch5_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_Ex1
-.PHONY : BookPractice_Ch5_Ex1
-
-# fast build rule for target.
-BookPractice_Ch5_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/build
-.PHONY : BookPractice_Ch5_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex3
-
-# Build rule for target.
-Practice_Ch2_Ex3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex3
-.PHONY : Practice_Ch2_Ex3
-
-# fast build rule for target.
-Practice_Ch2_Ex3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/build
-.PHONY : Practice_Ch2_Ex3/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex8
-
-# Build rule for target.
-Practice_Ch2_Ex8: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex8
-.PHONY : Practice_Ch2_Ex8
-
-# fast build rule for target.
-Practice_Ch2_Ex8/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/build
-.PHONY : Practice_Ch2_Ex8/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch1_Ex1
-
-# Build rule for target.
-BookPractice_Ch1_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch1_Ex1
-.PHONY : BookPractice_Ch1_Ex1
-
-# fast build rule for target.
-BookPractice_Ch1_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/build
-.PHONY : BookPractice_Ch1_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex6
-
-# Build rule for target.
-Practice_Ch2_Ex6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex6
-.PHONY : Practice_Ch2_Ex6
-
-# fast build rule for target.
-Practice_Ch2_Ex6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/build
-.PHONY : Practice_Ch2_Ex6/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex2
-
-# Build rule for target.
-BookPractice_Ch3_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex2
-.PHONY : BookPractice_Ch3_Ex2
-
-# fast build rule for target.
-BookPractice_Ch3_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex2.dir/build.make CMakeFiles/BookPractice_Ch3_Ex2.dir/build
-.PHONY : BookPractice_Ch3_Ex2/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch6_Ex1
-
-# Build rule for target.
-BookPractice_Ch6_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_Ex1
-.PHONY : BookPractice_Ch6_Ex1
-
-# fast build rule for target.
-BookPractice_Ch6_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex1.dir/build.make CMakeFiles/BookPractice_Ch6_Ex1.dir/build
-.PHONY : BookPractice_Ch6_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_Ex3
-
-# Build rule for target.
-BookPractice_Ch5_Ex3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_Ex3
-.PHONY : BookPractice_Ch5_Ex3
-
-# fast build rule for target.
-BookPractice_Ch5_Ex3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/build
-.PHONY : BookPractice_Ch5_Ex3/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch4_Ex2
-
-# Build rule for target.
-BookPractice_Ch4_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch4_Ex2
-.PHONY : BookPractice_Ch4_Ex2
-
-# fast build rule for target.
-BookPractice_Ch4_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/build
-.PHONY : BookPractice_Ch4_Ex2/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch4_Ex1
-
-# Build rule for target.
-BookPractice_Ch4_Ex1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch4_Ex1
-.PHONY : BookPractice_Ch4_Ex1
-
-# fast build rule for target.
-BookPractice_Ch4_Ex1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/build
-.PHONY : BookPractice_Ch4_Ex1/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex4
-
-# Build rule for target.
-Practice_Ch2_Ex4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex4
-.PHONY : Practice_Ch2_Ex4
-
-# fast build rule for target.
-Practice_Ch2_Ex4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/build
-.PHONY : Practice_Ch2_Ex4/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch6_LabEx3
-
-# Build rule for target.
-BookPractice_Ch6_LabEx3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch6_LabEx3
-.PHONY : BookPractice_Ch6_LabEx3
-
-# fast build rule for target.
-BookPractice_Ch6_LabEx3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx3.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx3.dir/build
-.PHONY : BookPractice_Ch6_LabEx3/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex2
-
-# Build rule for target.
-Practice_Ch2_Ex2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex2
-.PHONY : Practice_Ch2_Ex2
-
-# fast build rule for target.
-Practice_Ch2_Ex2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/build
-.PHONY : Practice_Ch2_Ex2/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Week3_Maze1
-
-# Build rule for target.
-Practice_Week3_Maze1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Week3_Maze1
-.PHONY : Practice_Week3_Maze1
-
-# fast build rule for target.
-Practice_Week3_Maze1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/build
-.PHONY : Practice_Week3_Maze1/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch5_Ex5
-
-# Build rule for target.
-BookPractice_Ch5_Ex5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch5_Ex5
-.PHONY : BookPractice_Ch5_Ex5
-
-# fast build rule for target.
-BookPractice_Ch5_Ex5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/build
-.PHONY : BookPractice_Ch5_Ex5/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex6
-
-# Build rule for target.
-BookPractice_Ch3_Ex6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex6
-.PHONY : BookPractice_Ch3_Ex6
-
-# fast build rule for target.
-BookPractice_Ch3_Ex6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex6.dir/build.make CMakeFiles/BookPractice_Ch3_Ex6.dir/build
-.PHONY : BookPractice_Ch3_Ex6/fast
-
-#=============================================================================
-# Target rules for targets named BookPractice_Ch3_Ex3
-
-# Build rule for target.
-BookPractice_Ch3_Ex3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookPractice_Ch3_Ex3
-.PHONY : BookPractice_Ch3_Ex3
-
-# fast build rule for target.
-BookPractice_Ch3_Ex3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex3.dir/build.make CMakeFiles/BookPractice_Ch3_Ex3.dir/build
-.PHONY : BookPractice_Ch3_Ex3/fast
-
-#=============================================================================
-# Target rules for targets named Practice_Ch2_Ex5
-
-# Build rule for target.
-Practice_Ch2_Ex5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Practice_Ch2_Ex5
-.PHONY : Practice_Ch2_Ex5
-
-# fast build rule for target.
-Practice_Ch2_Ex5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/build
-.PHONY : Practice_Ch2_Ex5/fast
-
-BookPractice/Ch1/Ex1.o: BookPractice/Ch1/Ex1.c.o
-.PHONY : BookPractice/Ch1/Ex1.o
+BookPractice_Ch7_Ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex1.dir/build.make CMakeFiles/BookPractice_Ch7_Ex1.dir/build
+.PHONY : BookPractice_Ch7_Ex1/fast
+
+BookPractice/Ch7/Ex1.o: BookPractice/Ch7/Ex1.c.o
+.PHONY : BookPractice/Ch7/Ex1.o
 
 # target to build an object file
-BookPractice/Ch1/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.o
-.PHONY : BookPractice/Ch1/Ex1.c.o
+BookPractice/Ch7/Ex1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex1.dir/build.make CMakeFiles/BookPractice_Ch7_Ex1.dir/BookPractice/Ch7/Ex1.c.o
+.PHONY : BookPractice/Ch7/Ex1.c.o
 
-BookPractice/Ch1/Ex1.i: BookPractice/Ch1/Ex1.c.i
-.PHONY : BookPractice/Ch1/Ex1.i
+BookPractice/Ch7/Ex1.i: BookPractice/Ch7/Ex1.c.i
+.PHONY : BookPractice/Ch7/Ex1.i
 
 # target to preprocess a source file
-BookPractice/Ch1/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.i
-.PHONY : BookPractice/Ch1/Ex1.c.i
+BookPractice/Ch7/Ex1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex1.dir/build.make CMakeFiles/BookPractice_Ch7_Ex1.dir/BookPractice/Ch7/Ex1.c.i
+.PHONY : BookPractice/Ch7/Ex1.c.i
 
-BookPractice/Ch1/Ex1.s: BookPractice/Ch1/Ex1.c.s
-.PHONY : BookPractice/Ch1/Ex1.s
+BookPractice/Ch7/Ex1.s: BookPractice/Ch7/Ex1.c.s
+.PHONY : BookPractice/Ch7/Ex1.s
 
 # target to generate assembly for a file
-BookPractice/Ch1/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch1_Ex1.dir/build.make CMakeFiles/BookPractice_Ch1_Ex1.dir/BookPractice/Ch1/Ex1.c.s
-.PHONY : BookPractice/Ch1/Ex1.c.s
+BookPractice/Ch7/Ex1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex1.dir/build.make CMakeFiles/BookPractice_Ch7_Ex1.dir/BookPractice/Ch7/Ex1.c.s
+.PHONY : BookPractice/Ch7/Ex1.c.s
 
-BookPractice/Ch3/Ex1.o: BookPractice/Ch3/Ex1.c.o
-.PHONY : BookPractice/Ch3/Ex1.o
+BookPractice/Ch7/Ex2.o: BookPractice/Ch7/Ex2.c.o
+.PHONY : BookPractice/Ch7/Ex2.o
 
 # target to build an object file
-BookPractice/Ch3/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex1.dir/build.make CMakeFiles/BookPractice_Ch3_Ex1.dir/BookPractice/Ch3/Ex1.c.o
-.PHONY : BookPractice/Ch3/Ex1.c.o
+BookPractice/Ch7/Ex2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex2.dir/build.make CMakeFiles/BookPractice_Ch7_Ex2.dir/BookPractice/Ch7/Ex2.c.o
+.PHONY : BookPractice/Ch7/Ex2.c.o
 
-BookPractice/Ch3/Ex1.i: BookPractice/Ch3/Ex1.c.i
-.PHONY : BookPractice/Ch3/Ex1.i
+BookPractice/Ch7/Ex2.i: BookPractice/Ch7/Ex2.c.i
+.PHONY : BookPractice/Ch7/Ex2.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex1.dir/build.make CMakeFiles/BookPractice_Ch3_Ex1.dir/BookPractice/Ch3/Ex1.c.i
-.PHONY : BookPractice/Ch3/Ex1.c.i
+BookPractice/Ch7/Ex2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex2.dir/build.make CMakeFiles/BookPractice_Ch7_Ex2.dir/BookPractice/Ch7/Ex2.c.i
+.PHONY : BookPractice/Ch7/Ex2.c.i
 
-BookPractice/Ch3/Ex1.s: BookPractice/Ch3/Ex1.c.s
-.PHONY : BookPractice/Ch3/Ex1.s
+BookPractice/Ch7/Ex2.s: BookPractice/Ch7/Ex2.c.s
+.PHONY : BookPractice/Ch7/Ex2.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex1.dir/build.make CMakeFiles/BookPractice_Ch3_Ex1.dir/BookPractice/Ch3/Ex1.c.s
-.PHONY : BookPractice/Ch3/Ex1.c.s
+BookPractice/Ch7/Ex2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex2.dir/build.make CMakeFiles/BookPractice_Ch7_Ex2.dir/BookPractice/Ch7/Ex2.c.s
+.PHONY : BookPractice/Ch7/Ex2.c.s
 
-BookPractice/Ch3/Ex2.o: BookPractice/Ch3/Ex2.c.o
-.PHONY : BookPractice/Ch3/Ex2.o
+BookPractice/Ch7/Ex3.o: BookPractice/Ch7/Ex3.c.o
+.PHONY : BookPractice/Ch7/Ex3.o
 
 # target to build an object file
-BookPractice/Ch3/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex2.dir/build.make CMakeFiles/BookPractice_Ch3_Ex2.dir/BookPractice/Ch3/Ex2.c.o
-.PHONY : BookPractice/Ch3/Ex2.c.o
+BookPractice/Ch7/Ex3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex3.dir/build.make CMakeFiles/BookPractice_Ch7_Ex3.dir/BookPractice/Ch7/Ex3.c.o
+.PHONY : BookPractice/Ch7/Ex3.c.o
 
-BookPractice/Ch3/Ex2.i: BookPractice/Ch3/Ex2.c.i
-.PHONY : BookPractice/Ch3/Ex2.i
+BookPractice/Ch7/Ex3.i: BookPractice/Ch7/Ex3.c.i
+.PHONY : BookPractice/Ch7/Ex3.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex2.dir/build.make CMakeFiles/BookPractice_Ch3_Ex2.dir/BookPractice/Ch3/Ex2.c.i
-.PHONY : BookPractice/Ch3/Ex2.c.i
+BookPractice/Ch7/Ex3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex3.dir/build.make CMakeFiles/BookPractice_Ch7_Ex3.dir/BookPractice/Ch7/Ex3.c.i
+.PHONY : BookPractice/Ch7/Ex3.c.i
 
-BookPractice/Ch3/Ex2.s: BookPractice/Ch3/Ex2.c.s
-.PHONY : BookPractice/Ch3/Ex2.s
+BookPractice/Ch7/Ex3.s: BookPractice/Ch7/Ex3.c.s
+.PHONY : BookPractice/Ch7/Ex3.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex2.dir/build.make CMakeFiles/BookPractice_Ch3_Ex2.dir/BookPractice/Ch3/Ex2.c.s
-.PHONY : BookPractice/Ch3/Ex2.c.s
+BookPractice/Ch7/Ex3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex3.dir/build.make CMakeFiles/BookPractice_Ch7_Ex3.dir/BookPractice/Ch7/Ex3.c.s
+.PHONY : BookPractice/Ch7/Ex3.c.s
 
-BookPractice/Ch3/Ex3.o: BookPractice/Ch3/Ex3.c.o
-.PHONY : BookPractice/Ch3/Ex3.o
+BookPractice/Ch7/Ex4.o: BookPractice/Ch7/Ex4.c.o
+.PHONY : BookPractice/Ch7/Ex4.o
 
 # target to build an object file
-BookPractice/Ch3/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex3.dir/build.make CMakeFiles/BookPractice_Ch3_Ex3.dir/BookPractice/Ch3/Ex3.c.o
-.PHONY : BookPractice/Ch3/Ex3.c.o
+BookPractice/Ch7/Ex4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex4.dir/build.make CMakeFiles/BookPractice_Ch7_Ex4.dir/BookPractice/Ch7/Ex4.c.o
+.PHONY : BookPractice/Ch7/Ex4.c.o
 
-BookPractice/Ch3/Ex3.i: BookPractice/Ch3/Ex3.c.i
-.PHONY : BookPractice/Ch3/Ex3.i
+BookPractice/Ch7/Ex4.i: BookPractice/Ch7/Ex4.c.i
+.PHONY : BookPractice/Ch7/Ex4.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex3.dir/build.make CMakeFiles/BookPractice_Ch3_Ex3.dir/BookPractice/Ch3/Ex3.c.i
-.PHONY : BookPractice/Ch3/Ex3.c.i
+BookPractice/Ch7/Ex4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex4.dir/build.make CMakeFiles/BookPractice_Ch7_Ex4.dir/BookPractice/Ch7/Ex4.c.i
+.PHONY : BookPractice/Ch7/Ex4.c.i
 
-BookPractice/Ch3/Ex3.s: BookPractice/Ch3/Ex3.c.s
-.PHONY : BookPractice/Ch3/Ex3.s
+BookPractice/Ch7/Ex4.s: BookPractice/Ch7/Ex4.c.s
+.PHONY : BookPractice/Ch7/Ex4.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex3.dir/build.make CMakeFiles/BookPractice_Ch3_Ex3.dir/BookPractice/Ch3/Ex3.c.s
-.PHONY : BookPractice/Ch3/Ex3.c.s
+BookPractice/Ch7/Ex4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex4.dir/build.make CMakeFiles/BookPractice_Ch7_Ex4.dir/BookPractice/Ch7/Ex4.c.s
+.PHONY : BookPractice/Ch7/Ex4.c.s
 
-BookPractice/Ch3/Ex4.o: BookPractice/Ch3/Ex4.c.o
-.PHONY : BookPractice/Ch3/Ex4.o
+BookPractice/Ch7/Ex5.o: BookPractice/Ch7/Ex5.c.o
+.PHONY : BookPractice/Ch7/Ex5.o
 
 # target to build an object file
-BookPractice/Ch3/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex4.dir/build.make CMakeFiles/BookPractice_Ch3_Ex4.dir/BookPractice/Ch3/Ex4.c.o
-.PHONY : BookPractice/Ch3/Ex4.c.o
+BookPractice/Ch7/Ex5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex5.dir/build.make CMakeFiles/BookPractice_Ch7_Ex5.dir/BookPractice/Ch7/Ex5.c.o
+.PHONY : BookPractice/Ch7/Ex5.c.o
 
-BookPractice/Ch3/Ex4.i: BookPractice/Ch3/Ex4.c.i
-.PHONY : BookPractice/Ch3/Ex4.i
+BookPractice/Ch7/Ex5.i: BookPractice/Ch7/Ex5.c.i
+.PHONY : BookPractice/Ch7/Ex5.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex4.dir/build.make CMakeFiles/BookPractice_Ch3_Ex4.dir/BookPractice/Ch3/Ex4.c.i
-.PHONY : BookPractice/Ch3/Ex4.c.i
+BookPractice/Ch7/Ex5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex5.dir/build.make CMakeFiles/BookPractice_Ch7_Ex5.dir/BookPractice/Ch7/Ex5.c.i
+.PHONY : BookPractice/Ch7/Ex5.c.i
 
-BookPractice/Ch3/Ex4.s: BookPractice/Ch3/Ex4.c.s
-.PHONY : BookPractice/Ch3/Ex4.s
+BookPractice/Ch7/Ex5.s: BookPractice/Ch7/Ex5.c.s
+.PHONY : BookPractice/Ch7/Ex5.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex4.dir/build.make CMakeFiles/BookPractice_Ch3_Ex4.dir/BookPractice/Ch3/Ex4.c.s
-.PHONY : BookPractice/Ch3/Ex4.c.s
+BookPractice/Ch7/Ex5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex5.dir/build.make CMakeFiles/BookPractice_Ch7_Ex5.dir/BookPractice/Ch7/Ex5.c.s
+.PHONY : BookPractice/Ch7/Ex5.c.s
 
-BookPractice/Ch3/Ex5.o: BookPractice/Ch3/Ex5.c.o
-.PHONY : BookPractice/Ch3/Ex5.o
+BookPractice/Ch7/Ex6.o: BookPractice/Ch7/Ex6.c.o
+.PHONY : BookPractice/Ch7/Ex6.o
 
 # target to build an object file
-BookPractice/Ch3/Ex5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex5.dir/build.make CMakeFiles/BookPractice_Ch3_Ex5.dir/BookPractice/Ch3/Ex5.c.o
-.PHONY : BookPractice/Ch3/Ex5.c.o
+BookPractice/Ch7/Ex6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex6.dir/build.make CMakeFiles/BookPractice_Ch7_Ex6.dir/BookPractice/Ch7/Ex6.c.o
+.PHONY : BookPractice/Ch7/Ex6.c.o
 
-BookPractice/Ch3/Ex5.i: BookPractice/Ch3/Ex5.c.i
-.PHONY : BookPractice/Ch3/Ex5.i
+BookPractice/Ch7/Ex6.i: BookPractice/Ch7/Ex6.c.i
+.PHONY : BookPractice/Ch7/Ex6.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex5.dir/build.make CMakeFiles/BookPractice_Ch3_Ex5.dir/BookPractice/Ch3/Ex5.c.i
-.PHONY : BookPractice/Ch3/Ex5.c.i
+BookPractice/Ch7/Ex6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex6.dir/build.make CMakeFiles/BookPractice_Ch7_Ex6.dir/BookPractice/Ch7/Ex6.c.i
+.PHONY : BookPractice/Ch7/Ex6.c.i
 
-BookPractice/Ch3/Ex5.s: BookPractice/Ch3/Ex5.c.s
-.PHONY : BookPractice/Ch3/Ex5.s
+BookPractice/Ch7/Ex6.s: BookPractice/Ch7/Ex6.c.s
+.PHONY : BookPractice/Ch7/Ex6.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex5.dir/build.make CMakeFiles/BookPractice_Ch3_Ex5.dir/BookPractice/Ch3/Ex5.c.s
-.PHONY : BookPractice/Ch3/Ex5.c.s
+BookPractice/Ch7/Ex6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex6.dir/build.make CMakeFiles/BookPractice_Ch7_Ex6.dir/BookPractice/Ch7/Ex6.c.s
+.PHONY : BookPractice/Ch7/Ex6.c.s
 
-BookPractice/Ch3/Ex6.o: BookPractice/Ch3/Ex6.c.o
-.PHONY : BookPractice/Ch3/Ex6.o
+BookPractice/Ch7/Ex7.o: BookPractice/Ch7/Ex7.c.o
+.PHONY : BookPractice/Ch7/Ex7.o
 
 # target to build an object file
-BookPractice/Ch3/Ex6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex6.dir/build.make CMakeFiles/BookPractice_Ch3_Ex6.dir/BookPractice/Ch3/Ex6.c.o
-.PHONY : BookPractice/Ch3/Ex6.c.o
+BookPractice/Ch7/Ex7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex7.dir/build.make CMakeFiles/BookPractice_Ch7_Ex7.dir/BookPractice/Ch7/Ex7.c.o
+.PHONY : BookPractice/Ch7/Ex7.c.o
 
-BookPractice/Ch3/Ex6.i: BookPractice/Ch3/Ex6.c.i
-.PHONY : BookPractice/Ch3/Ex6.i
-
-# target to preprocess a source file
-BookPractice/Ch3/Ex6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex6.dir/build.make CMakeFiles/BookPractice_Ch3_Ex6.dir/BookPractice/Ch3/Ex6.c.i
-.PHONY : BookPractice/Ch3/Ex6.c.i
-
-BookPractice/Ch3/Ex6.s: BookPractice/Ch3/Ex6.c.s
-.PHONY : BookPractice/Ch3/Ex6.s
-
-# target to generate assembly for a file
-BookPractice/Ch3/Ex6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex6.dir/build.make CMakeFiles/BookPractice_Ch3_Ex6.dir/BookPractice/Ch3/Ex6.c.s
-.PHONY : BookPractice/Ch3/Ex6.c.s
-
-BookPractice/Ch3/Ex7.o: BookPractice/Ch3/Ex7.c.o
-.PHONY : BookPractice/Ch3/Ex7.o
-
-# target to build an object file
-BookPractice/Ch3/Ex7.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex7.dir/build.make CMakeFiles/BookPractice_Ch3_Ex7.dir/BookPractice/Ch3/Ex7.c.o
-.PHONY : BookPractice/Ch3/Ex7.c.o
-
-BookPractice/Ch3/Ex7.i: BookPractice/Ch3/Ex7.c.i
-.PHONY : BookPractice/Ch3/Ex7.i
+BookPractice/Ch7/Ex7.i: BookPractice/Ch7/Ex7.c.i
+.PHONY : BookPractice/Ch7/Ex7.i
 
 # target to preprocess a source file
-BookPractice/Ch3/Ex7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex7.dir/build.make CMakeFiles/BookPractice_Ch3_Ex7.dir/BookPractice/Ch3/Ex7.c.i
-.PHONY : BookPractice/Ch3/Ex7.c.i
+BookPractice/Ch7/Ex7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex7.dir/build.make CMakeFiles/BookPractice_Ch7_Ex7.dir/BookPractice/Ch7/Ex7.c.i
+.PHONY : BookPractice/Ch7/Ex7.c.i
 
-BookPractice/Ch3/Ex7.s: BookPractice/Ch3/Ex7.c.s
-.PHONY : BookPractice/Ch3/Ex7.s
-
-# target to generate assembly for a file
-BookPractice/Ch3/Ex7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex7.dir/build.make CMakeFiles/BookPractice_Ch3_Ex7.dir/BookPractice/Ch3/Ex7.c.s
-.PHONY : BookPractice/Ch3/Ex7.c.s
-
-BookPractice/Ch3/Ex8.o: BookPractice/Ch3/Ex8.c.o
-.PHONY : BookPractice/Ch3/Ex8.o
-
-# target to build an object file
-BookPractice/Ch3/Ex8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/BookPractice/Ch3/Ex8.c.o
-.PHONY : BookPractice/Ch3/Ex8.c.o
-
-BookPractice/Ch3/Ex8.i: BookPractice/Ch3/Ex8.c.i
-.PHONY : BookPractice/Ch3/Ex8.i
-
-# target to preprocess a source file
-BookPractice/Ch3/Ex8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/BookPractice/Ch3/Ex8.c.i
-.PHONY : BookPractice/Ch3/Ex8.c.i
-
-BookPractice/Ch3/Ex8.s: BookPractice/Ch3/Ex8.c.s
-.PHONY : BookPractice/Ch3/Ex8.s
+BookPractice/Ch7/Ex7.s: BookPractice/Ch7/Ex7.c.s
+.PHONY : BookPractice/Ch7/Ex7.s
 
 # target to generate assembly for a file
-BookPractice/Ch3/Ex8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch3_Ex8.dir/build.make CMakeFiles/BookPractice_Ch3_Ex8.dir/BookPractice/Ch3/Ex8.c.s
-.PHONY : BookPractice/Ch3/Ex8.c.s
-
-BookPractice/Ch4/Ex1.o: BookPractice/Ch4/Ex1.c.o
-.PHONY : BookPractice/Ch4/Ex1.o
-
-# target to build an object file
-BookPractice/Ch4/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.o
-.PHONY : BookPractice/Ch4/Ex1.c.o
-
-BookPractice/Ch4/Ex1.i: BookPractice/Ch4/Ex1.c.i
-.PHONY : BookPractice/Ch4/Ex1.i
-
-# target to preprocess a source file
-BookPractice/Ch4/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.i
-.PHONY : BookPractice/Ch4/Ex1.c.i
-
-BookPractice/Ch4/Ex1.s: BookPractice/Ch4/Ex1.c.s
-.PHONY : BookPractice/Ch4/Ex1.s
-
-# target to generate assembly for a file
-BookPractice/Ch4/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex1.dir/build.make CMakeFiles/BookPractice_Ch4_Ex1.dir/BookPractice/Ch4/Ex1.c.s
-.PHONY : BookPractice/Ch4/Ex1.c.s
-
-BookPractice/Ch4/Ex2.o: BookPractice/Ch4/Ex2.c.o
-.PHONY : BookPractice/Ch4/Ex2.o
-
-# target to build an object file
-BookPractice/Ch4/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.o
-.PHONY : BookPractice/Ch4/Ex2.c.o
-
-BookPractice/Ch4/Ex2.i: BookPractice/Ch4/Ex2.c.i
-.PHONY : BookPractice/Ch4/Ex2.i
-
-# target to preprocess a source file
-BookPractice/Ch4/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.i
-.PHONY : BookPractice/Ch4/Ex2.c.i
-
-BookPractice/Ch4/Ex2.s: BookPractice/Ch4/Ex2.c.s
-.PHONY : BookPractice/Ch4/Ex2.s
-
-# target to generate assembly for a file
-BookPractice/Ch4/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch4_Ex2.dir/build.make CMakeFiles/BookPractice_Ch4_Ex2.dir/BookPractice/Ch4/Ex2.c.s
-.PHONY : BookPractice/Ch4/Ex2.c.s
-
-BookPractice/Ch5/Ex1.o: BookPractice/Ch5/Ex1.c.o
-.PHONY : BookPractice/Ch5/Ex1.o
-
-# target to build an object file
-BookPractice/Ch5/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/BookPractice/Ch5/Ex1.c.o
-.PHONY : BookPractice/Ch5/Ex1.c.o
-
-BookPractice/Ch5/Ex1.i: BookPractice/Ch5/Ex1.c.i
-.PHONY : BookPractice/Ch5/Ex1.i
-
-# target to preprocess a source file
-BookPractice/Ch5/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/BookPractice/Ch5/Ex1.c.i
-.PHONY : BookPractice/Ch5/Ex1.c.i
-
-BookPractice/Ch5/Ex1.s: BookPractice/Ch5/Ex1.c.s
-.PHONY : BookPractice/Ch5/Ex1.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex1.dir/build.make CMakeFiles/BookPractice_Ch5_Ex1.dir/BookPractice/Ch5/Ex1.c.s
-.PHONY : BookPractice/Ch5/Ex1.c.s
-
-BookPractice/Ch5/Ex2.o: BookPractice/Ch5/Ex2.c.o
-.PHONY : BookPractice/Ch5/Ex2.o
-
-# target to build an object file
-BookPractice/Ch5/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/BookPractice/Ch5/Ex2.c.o
-.PHONY : BookPractice/Ch5/Ex2.c.o
-
-BookPractice/Ch5/Ex2.i: BookPractice/Ch5/Ex2.c.i
-.PHONY : BookPractice/Ch5/Ex2.i
-
-# target to preprocess a source file
-BookPractice/Ch5/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/BookPractice/Ch5/Ex2.c.i
-.PHONY : BookPractice/Ch5/Ex2.c.i
-
-BookPractice/Ch5/Ex2.s: BookPractice/Ch5/Ex2.c.s
-.PHONY : BookPractice/Ch5/Ex2.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex2.dir/build.make CMakeFiles/BookPractice_Ch5_Ex2.dir/BookPractice/Ch5/Ex2.c.s
-.PHONY : BookPractice/Ch5/Ex2.c.s
-
-BookPractice/Ch5/Ex3.o: BookPractice/Ch5/Ex3.c.o
-.PHONY : BookPractice/Ch5/Ex3.o
-
-# target to build an object file
-BookPractice/Ch5/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/BookPractice/Ch5/Ex3.c.o
-.PHONY : BookPractice/Ch5/Ex3.c.o
-
-BookPractice/Ch5/Ex3.i: BookPractice/Ch5/Ex3.c.i
-.PHONY : BookPractice/Ch5/Ex3.i
-
-# target to preprocess a source file
-BookPractice/Ch5/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/BookPractice/Ch5/Ex3.c.i
-.PHONY : BookPractice/Ch5/Ex3.c.i
-
-BookPractice/Ch5/Ex3.s: BookPractice/Ch5/Ex3.c.s
-.PHONY : BookPractice/Ch5/Ex3.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex3.dir/build.make CMakeFiles/BookPractice_Ch5_Ex3.dir/BookPractice/Ch5/Ex3.c.s
-.PHONY : BookPractice/Ch5/Ex3.c.s
-
-BookPractice/Ch5/Ex4.o: BookPractice/Ch5/Ex4.c.o
-.PHONY : BookPractice/Ch5/Ex4.o
-
-# target to build an object file
-BookPractice/Ch5/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/BookPractice/Ch5/Ex4.c.o
-.PHONY : BookPractice/Ch5/Ex4.c.o
-
-BookPractice/Ch5/Ex4.i: BookPractice/Ch5/Ex4.c.i
-.PHONY : BookPractice/Ch5/Ex4.i
-
-# target to preprocess a source file
-BookPractice/Ch5/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/BookPractice/Ch5/Ex4.c.i
-.PHONY : BookPractice/Ch5/Ex4.c.i
-
-BookPractice/Ch5/Ex4.s: BookPractice/Ch5/Ex4.c.s
-.PHONY : BookPractice/Ch5/Ex4.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex4.dir/build.make CMakeFiles/BookPractice_Ch5_Ex4.dir/BookPractice/Ch5/Ex4.c.s
-.PHONY : BookPractice/Ch5/Ex4.c.s
-
-BookPractice/Ch5/Ex5.o: BookPractice/Ch5/Ex5.c.o
-.PHONY : BookPractice/Ch5/Ex5.o
-
-# target to build an object file
-BookPractice/Ch5/Ex5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/BookPractice/Ch5/Ex5.c.o
-.PHONY : BookPractice/Ch5/Ex5.c.o
-
-BookPractice/Ch5/Ex5.i: BookPractice/Ch5/Ex5.c.i
-.PHONY : BookPractice/Ch5/Ex5.i
-
-# target to preprocess a source file
-BookPractice/Ch5/Ex5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/BookPractice/Ch5/Ex5.c.i
-.PHONY : BookPractice/Ch5/Ex5.c.i
-
-BookPractice/Ch5/Ex5.s: BookPractice/Ch5/Ex5.c.s
-.PHONY : BookPractice/Ch5/Ex5.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/Ex5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_Ex5.dir/build.make CMakeFiles/BookPractice_Ch5_Ex5.dir/BookPractice/Ch5/Ex5.c.s
-.PHONY : BookPractice/Ch5/Ex5.c.s
-
-BookPractice/Ch5/deque.o: BookPractice/Ch5/deque.c.o
-.PHONY : BookPractice/Ch5/deque.o
-
-# target to build an object file
-BookPractice/Ch5/deque.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_deque.dir/build.make CMakeFiles/BookPractice_Ch5_deque.dir/BookPractice/Ch5/deque.c.o
-.PHONY : BookPractice/Ch5/deque.c.o
-
-BookPractice/Ch5/deque.i: BookPractice/Ch5/deque.c.i
-.PHONY : BookPractice/Ch5/deque.i
-
-# target to preprocess a source file
-BookPractice/Ch5/deque.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_deque.dir/build.make CMakeFiles/BookPractice_Ch5_deque.dir/BookPractice/Ch5/deque.c.i
-.PHONY : BookPractice/Ch5/deque.c.i
-
-BookPractice/Ch5/deque.s: BookPractice/Ch5/deque.c.s
-.PHONY : BookPractice/Ch5/deque.s
-
-# target to generate assembly for a file
-BookPractice/Ch5/deque.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch5_deque.dir/build.make CMakeFiles/BookPractice_Ch5_deque.dir/BookPractice/Ch5/deque.c.s
-.PHONY : BookPractice/Ch5/deque.c.s
-
-BookPractice/Ch6/Ex1.o: BookPractice/Ch6/Ex1.c.o
-.PHONY : BookPractice/Ch6/Ex1.o
-
-# target to build an object file
-BookPractice/Ch6/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex1.dir/build.make CMakeFiles/BookPractice_Ch6_Ex1.dir/BookPractice/Ch6/Ex1.c.o
-.PHONY : BookPractice/Ch6/Ex1.c.o
-
-BookPractice/Ch6/Ex1.i: BookPractice/Ch6/Ex1.c.i
-.PHONY : BookPractice/Ch6/Ex1.i
-
-# target to preprocess a source file
-BookPractice/Ch6/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex1.dir/build.make CMakeFiles/BookPractice_Ch6_Ex1.dir/BookPractice/Ch6/Ex1.c.i
-.PHONY : BookPractice/Ch6/Ex1.c.i
-
-BookPractice/Ch6/Ex1.s: BookPractice/Ch6/Ex1.c.s
-.PHONY : BookPractice/Ch6/Ex1.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex1.dir/build.make CMakeFiles/BookPractice_Ch6_Ex1.dir/BookPractice/Ch6/Ex1.c.s
-.PHONY : BookPractice/Ch6/Ex1.c.s
-
-BookPractice/Ch6/Ex2.o: BookPractice/Ch6/Ex2.c.o
-.PHONY : BookPractice/Ch6/Ex2.o
-
-# target to build an object file
-BookPractice/Ch6/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex2.dir/build.make CMakeFiles/BookPractice_Ch6_Ex2.dir/BookPractice/Ch6/Ex2.c.o
-.PHONY : BookPractice/Ch6/Ex2.c.o
-
-BookPractice/Ch6/Ex2.i: BookPractice/Ch6/Ex2.c.i
-.PHONY : BookPractice/Ch6/Ex2.i
-
-# target to preprocess a source file
-BookPractice/Ch6/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex2.dir/build.make CMakeFiles/BookPractice_Ch6_Ex2.dir/BookPractice/Ch6/Ex2.c.i
-.PHONY : BookPractice/Ch6/Ex2.c.i
-
-BookPractice/Ch6/Ex2.s: BookPractice/Ch6/Ex2.c.s
-.PHONY : BookPractice/Ch6/Ex2.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_Ex2.dir/build.make CMakeFiles/BookPractice_Ch6_Ex2.dir/BookPractice/Ch6/Ex2.c.s
-.PHONY : BookPractice/Ch6/Ex2.c.s
-
-BookPractice/Ch6/LabEx1.o: BookPractice/Ch6/LabEx1.c.o
-.PHONY : BookPractice/Ch6/LabEx1.o
-
-# target to build an object file
-BookPractice/Ch6/LabEx1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx1.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx1.dir/BookPractice/Ch6/LabEx1.c.o
-.PHONY : BookPractice/Ch6/LabEx1.c.o
-
-BookPractice/Ch6/LabEx1.i: BookPractice/Ch6/LabEx1.c.i
-.PHONY : BookPractice/Ch6/LabEx1.i
-
-# target to preprocess a source file
-BookPractice/Ch6/LabEx1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx1.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx1.dir/BookPractice/Ch6/LabEx1.c.i
-.PHONY : BookPractice/Ch6/LabEx1.c.i
-
-BookPractice/Ch6/LabEx1.s: BookPractice/Ch6/LabEx1.c.s
-.PHONY : BookPractice/Ch6/LabEx1.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/LabEx1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx1.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx1.dir/BookPractice/Ch6/LabEx1.c.s
-.PHONY : BookPractice/Ch6/LabEx1.c.s
-
-BookPractice/Ch6/LabEx2.o: BookPractice/Ch6/LabEx2.c.o
-.PHONY : BookPractice/Ch6/LabEx2.o
-
-# target to build an object file
-BookPractice/Ch6/LabEx2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx2.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx2.dir/BookPractice/Ch6/LabEx2.c.o
-.PHONY : BookPractice/Ch6/LabEx2.c.o
-
-BookPractice/Ch6/LabEx2.i: BookPractice/Ch6/LabEx2.c.i
-.PHONY : BookPractice/Ch6/LabEx2.i
-
-# target to preprocess a source file
-BookPractice/Ch6/LabEx2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx2.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx2.dir/BookPractice/Ch6/LabEx2.c.i
-.PHONY : BookPractice/Ch6/LabEx2.c.i
-
-BookPractice/Ch6/LabEx2.s: BookPractice/Ch6/LabEx2.c.s
-.PHONY : BookPractice/Ch6/LabEx2.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/LabEx2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx2.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx2.dir/BookPractice/Ch6/LabEx2.c.s
-.PHONY : BookPractice/Ch6/LabEx2.c.s
-
-BookPractice/Ch6/LabEx3.o: BookPractice/Ch6/LabEx3.c.o
-.PHONY : BookPractice/Ch6/LabEx3.o
-
-# target to build an object file
-BookPractice/Ch6/LabEx3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx3.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx3.dir/BookPractice/Ch6/LabEx3.c.o
-.PHONY : BookPractice/Ch6/LabEx3.c.o
-
-BookPractice/Ch6/LabEx3.i: BookPractice/Ch6/LabEx3.c.i
-.PHONY : BookPractice/Ch6/LabEx3.i
-
-# target to preprocess a source file
-BookPractice/Ch6/LabEx3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx3.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx3.dir/BookPractice/Ch6/LabEx3.c.i
-.PHONY : BookPractice/Ch6/LabEx3.c.i
-
-BookPractice/Ch6/LabEx3.s: BookPractice/Ch6/LabEx3.c.s
-.PHONY : BookPractice/Ch6/LabEx3.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/LabEx3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx3.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx3.dir/BookPractice/Ch6/LabEx3.c.s
-.PHONY : BookPractice/Ch6/LabEx3.c.s
-
-BookPractice/Ch6/LabEx4.o: BookPractice/Ch6/LabEx4.c.o
-.PHONY : BookPractice/Ch6/LabEx4.o
-
-# target to build an object file
-BookPractice/Ch6/LabEx4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx4.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx4.dir/BookPractice/Ch6/LabEx4.c.o
-.PHONY : BookPractice/Ch6/LabEx4.c.o
-
-BookPractice/Ch6/LabEx4.i: BookPractice/Ch6/LabEx4.c.i
-.PHONY : BookPractice/Ch6/LabEx4.i
-
-# target to preprocess a source file
-BookPractice/Ch6/LabEx4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx4.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx4.dir/BookPractice/Ch6/LabEx4.c.i
-.PHONY : BookPractice/Ch6/LabEx4.c.i
-
-BookPractice/Ch6/LabEx4.s: BookPractice/Ch6/LabEx4.c.s
-.PHONY : BookPractice/Ch6/LabEx4.s
-
-# target to generate assembly for a file
-BookPractice/Ch6/LabEx4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch6_LabEx4.dir/build.make CMakeFiles/BookPractice_Ch6_LabEx4.dir/BookPractice/Ch6/LabEx4.c.s
-.PHONY : BookPractice/Ch6/LabEx4.c.s
-
-Practice/Week2/Ex1.o: Practice/Week2/Ex1.c.o
-.PHONY : Practice/Week2/Ex1.o
-
-# target to build an object file
-Practice/Week2/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.o
-.PHONY : Practice/Week2/Ex1.c.o
-
-Practice/Week2/Ex1.i: Practice/Week2/Ex1.c.i
-.PHONY : Practice/Week2/Ex1.i
-
-# target to preprocess a source file
-Practice/Week2/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.i
-.PHONY : Practice/Week2/Ex1.c.i
-
-Practice/Week2/Ex1.s: Practice/Week2/Ex1.c.s
-.PHONY : Practice/Week2/Ex1.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex1.dir/build.make CMakeFiles/Practice_Ch2_Ex1.dir/Practice/Week2/Ex1.c.s
-.PHONY : Practice/Week2/Ex1.c.s
-
-Practice/Week2/Ex2.o: Practice/Week2/Ex2.c.o
-.PHONY : Practice/Week2/Ex2.o
-
-# target to build an object file
-Practice/Week2/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.o
-.PHONY : Practice/Week2/Ex2.c.o
-
-Practice/Week2/Ex2.i: Practice/Week2/Ex2.c.i
-.PHONY : Practice/Week2/Ex2.i
-
-# target to preprocess a source file
-Practice/Week2/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.i
-.PHONY : Practice/Week2/Ex2.c.i
-
-Practice/Week2/Ex2.s: Practice/Week2/Ex2.c.s
-.PHONY : Practice/Week2/Ex2.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex2.dir/build.make CMakeFiles/Practice_Ch2_Ex2.dir/Practice/Week2/Ex2.c.s
-.PHONY : Practice/Week2/Ex2.c.s
-
-Practice/Week2/Ex3.o: Practice/Week2/Ex3.c.o
-.PHONY : Practice/Week2/Ex3.o
-
-# target to build an object file
-Practice/Week2/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.o
-.PHONY : Practice/Week2/Ex3.c.o
-
-Practice/Week2/Ex3.i: Practice/Week2/Ex3.c.i
-.PHONY : Practice/Week2/Ex3.i
-
-# target to preprocess a source file
-Practice/Week2/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.i
-.PHONY : Practice/Week2/Ex3.c.i
-
-Practice/Week2/Ex3.s: Practice/Week2/Ex3.c.s
-.PHONY : Practice/Week2/Ex3.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex3.dir/build.make CMakeFiles/Practice_Ch2_Ex3.dir/Practice/Week2/Ex3.c.s
-.PHONY : Practice/Week2/Ex3.c.s
-
-Practice/Week2/Ex4.o: Practice/Week2/Ex4.c.o
-.PHONY : Practice/Week2/Ex4.o
-
-# target to build an object file
-Practice/Week2/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.o
-.PHONY : Practice/Week2/Ex4.c.o
-
-Practice/Week2/Ex4.i: Practice/Week2/Ex4.c.i
-.PHONY : Practice/Week2/Ex4.i
-
-# target to preprocess a source file
-Practice/Week2/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.i
-.PHONY : Practice/Week2/Ex4.c.i
-
-Practice/Week2/Ex4.s: Practice/Week2/Ex4.c.s
-.PHONY : Practice/Week2/Ex4.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex4.dir/build.make CMakeFiles/Practice_Ch2_Ex4.dir/Practice/Week2/Ex4.c.s
-.PHONY : Practice/Week2/Ex4.c.s
-
-Practice/Week2/Ex5.o: Practice/Week2/Ex5.c.o
-.PHONY : Practice/Week2/Ex5.o
-
-# target to build an object file
-Practice/Week2/Ex5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.o
-.PHONY : Practice/Week2/Ex5.c.o
-
-Practice/Week2/Ex5.i: Practice/Week2/Ex5.c.i
-.PHONY : Practice/Week2/Ex5.i
-
-# target to preprocess a source file
-Practice/Week2/Ex5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.i
-.PHONY : Practice/Week2/Ex5.c.i
-
-Practice/Week2/Ex5.s: Practice/Week2/Ex5.c.s
-.PHONY : Practice/Week2/Ex5.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex5.dir/build.make CMakeFiles/Practice_Ch2_Ex5.dir/Practice/Week2/Ex5.c.s
-.PHONY : Practice/Week2/Ex5.c.s
-
-Practice/Week2/Ex6.o: Practice/Week2/Ex6.c.o
-.PHONY : Practice/Week2/Ex6.o
-
-# target to build an object file
-Practice/Week2/Ex6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.o
-.PHONY : Practice/Week2/Ex6.c.o
-
-Practice/Week2/Ex6.i: Practice/Week2/Ex6.c.i
-.PHONY : Practice/Week2/Ex6.i
-
-# target to preprocess a source file
-Practice/Week2/Ex6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.i
-.PHONY : Practice/Week2/Ex6.c.i
-
-Practice/Week2/Ex6.s: Practice/Week2/Ex6.c.s
-.PHONY : Practice/Week2/Ex6.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex6.dir/build.make CMakeFiles/Practice_Ch2_Ex6.dir/Practice/Week2/Ex6.c.s
-.PHONY : Practice/Week2/Ex6.c.s
-
-Practice/Week2/Ex7.o: Practice/Week2/Ex7.c.o
-.PHONY : Practice/Week2/Ex7.o
-
-# target to build an object file
-Practice/Week2/Ex7.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.o
-.PHONY : Practice/Week2/Ex7.c.o
-
-Practice/Week2/Ex7.i: Practice/Week2/Ex7.c.i
-.PHONY : Practice/Week2/Ex7.i
-
-# target to preprocess a source file
-Practice/Week2/Ex7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.i
-.PHONY : Practice/Week2/Ex7.c.i
-
-Practice/Week2/Ex7.s: Practice/Week2/Ex7.c.s
-.PHONY : Practice/Week2/Ex7.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex7.dir/build.make CMakeFiles/Practice_Ch2_Ex7.dir/Practice/Week2/Ex7.c.s
-.PHONY : Practice/Week2/Ex7.c.s
-
-Practice/Week2/Ex8.o: Practice/Week2/Ex8.c.o
-.PHONY : Practice/Week2/Ex8.o
-
-# target to build an object file
-Practice/Week2/Ex8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.o
-.PHONY : Practice/Week2/Ex8.c.o
-
-Practice/Week2/Ex8.i: Practice/Week2/Ex8.c.i
-.PHONY : Practice/Week2/Ex8.i
-
-# target to preprocess a source file
-Practice/Week2/Ex8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.i
-.PHONY : Practice/Week2/Ex8.c.i
-
-Practice/Week2/Ex8.s: Practice/Week2/Ex8.c.s
-.PHONY : Practice/Week2/Ex8.s
-
-# target to generate assembly for a file
-Practice/Week2/Ex8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Ch2_Ex8.dir/build.make CMakeFiles/Practice_Ch2_Ex8.dir/Practice/Week2/Ex8.c.s
-.PHONY : Practice/Week2/Ex8.c.s
-
-Practice/Week3/Maze_201721164.o: Practice/Week3/Maze_201721164.c.o
-.PHONY : Practice/Week3/Maze_201721164.o
-
-# target to build an object file
-Practice/Week3/Maze_201721164.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.o
-.PHONY : Practice/Week3/Maze_201721164.c.o
-
-Practice/Week3/Maze_201721164.i: Practice/Week3/Maze_201721164.c.i
-.PHONY : Practice/Week3/Maze_201721164.i
-
-# target to preprocess a source file
-Practice/Week3/Maze_201721164.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.i
-.PHONY : Practice/Week3/Maze_201721164.c.i
-
-Practice/Week3/Maze_201721164.s: Practice/Week3/Maze_201721164.c.s
-.PHONY : Practice/Week3/Maze_201721164.s
-
-# target to generate assembly for a file
-Practice/Week3/Maze_201721164.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week3_Maze1.dir/build.make CMakeFiles/Practice_Week3_Maze1.dir/Practice/Week3/Maze_201721164.c.s
-.PHONY : Practice/Week3/Maze_201721164.c.s
-
-Practice/Week4/Ex6.o: Practice/Week4/Ex6.c.o
-.PHONY : Practice/Week4/Ex6.o
-
-# target to build an object file
-Practice/Week4/Ex6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex6.dir/build.make CMakeFiles/Practice_Week4_Ex6.dir/Practice/Week4/Ex6.c.o
-.PHONY : Practice/Week4/Ex6.c.o
-
-Practice/Week4/Ex6.i: Practice/Week4/Ex6.c.i
-.PHONY : Practice/Week4/Ex6.i
-
-# target to preprocess a source file
-Practice/Week4/Ex6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex6.dir/build.make CMakeFiles/Practice_Week4_Ex6.dir/Practice/Week4/Ex6.c.i
-.PHONY : Practice/Week4/Ex6.c.i
-
-Practice/Week4/Ex6.s: Practice/Week4/Ex6.c.s
-.PHONY : Practice/Week4/Ex6.s
-
-# target to generate assembly for a file
-Practice/Week4/Ex6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex6.dir/build.make CMakeFiles/Practice_Week4_Ex6.dir/Practice/Week4/Ex6.c.s
-.PHONY : Practice/Week4/Ex6.c.s
-
-Practice/Week4/Ex7.o: Practice/Week4/Ex7.c.o
-.PHONY : Practice/Week4/Ex7.o
-
-# target to build an object file
-Practice/Week4/Ex7.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex7.dir/build.make CMakeFiles/Practice_Week4_Ex7.dir/Practice/Week4/Ex7.c.o
-.PHONY : Practice/Week4/Ex7.c.o
-
-Practice/Week4/Ex7.i: Practice/Week4/Ex7.c.i
-.PHONY : Practice/Week4/Ex7.i
-
-# target to preprocess a source file
-Practice/Week4/Ex7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex7.dir/build.make CMakeFiles/Practice_Week4_Ex7.dir/Practice/Week4/Ex7.c.i
-.PHONY : Practice/Week4/Ex7.c.i
-
-Practice/Week4/Ex7.s: Practice/Week4/Ex7.c.s
-.PHONY : Practice/Week4/Ex7.s
-
-# target to generate assembly for a file
-Practice/Week4/Ex7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week4_Ex7.dir/build.make CMakeFiles/Practice_Week4_Ex7.dir/Practice/Week4/Ex7.c.s
-.PHONY : Practice/Week4/Ex7.c.s
-
-Practice/Week5/Ex1.o: Practice/Week5/Ex1.c.o
-.PHONY : Practice/Week5/Ex1.o
-
-# target to build an object file
-Practice/Week5/Ex1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.o
-.PHONY : Practice/Week5/Ex1.c.o
-
-Practice/Week5/Ex1.i: Practice/Week5/Ex1.c.i
-.PHONY : Practice/Week5/Ex1.i
-
-# target to preprocess a source file
-Practice/Week5/Ex1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.i
-.PHONY : Practice/Week5/Ex1.c.i
-
-Practice/Week5/Ex1.s: Practice/Week5/Ex1.c.s
-.PHONY : Practice/Week5/Ex1.s
-
-# target to generate assembly for a file
-Practice/Week5/Ex1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex1.dir/build.make CMakeFiles/Practice_Week5_Ex1.dir/Practice/Week5/Ex1.c.s
-.PHONY : Practice/Week5/Ex1.c.s
-
-Practice/Week5/Ex2.o: Practice/Week5/Ex2.c.o
-.PHONY : Practice/Week5/Ex2.o
-
-# target to build an object file
-Practice/Week5/Ex2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.o
-.PHONY : Practice/Week5/Ex2.c.o
-
-Practice/Week5/Ex2.i: Practice/Week5/Ex2.c.i
-.PHONY : Practice/Week5/Ex2.i
-
-# target to preprocess a source file
-Practice/Week5/Ex2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.i
-.PHONY : Practice/Week5/Ex2.c.i
-
-Practice/Week5/Ex2.s: Practice/Week5/Ex2.c.s
-.PHONY : Practice/Week5/Ex2.s
-
-# target to generate assembly for a file
-Practice/Week5/Ex2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex2.dir/build.make CMakeFiles/Practice_Week5_Ex2.dir/Practice/Week5/Ex2.c.s
-.PHONY : Practice/Week5/Ex2.c.s
-
-Practice/Week5/Ex3.o: Practice/Week5/Ex3.c.o
-.PHONY : Practice/Week5/Ex3.o
-
-# target to build an object file
-Practice/Week5/Ex3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.o
-.PHONY : Practice/Week5/Ex3.c.o
-
-Practice/Week5/Ex3.i: Practice/Week5/Ex3.c.i
-.PHONY : Practice/Week5/Ex3.i
-
-# target to preprocess a source file
-Practice/Week5/Ex3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.i
-.PHONY : Practice/Week5/Ex3.c.i
-
-Practice/Week5/Ex3.s: Practice/Week5/Ex3.c.s
-.PHONY : Practice/Week5/Ex3.s
-
-# target to generate assembly for a file
-Practice/Week5/Ex3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex3.dir/build.make CMakeFiles/Practice_Week5_Ex3.dir/Practice/Week5/Ex3.c.s
-.PHONY : Practice/Week5/Ex3.c.s
-
-Practice/Week5/Ex4.o: Practice/Week5/Ex4.c.o
-.PHONY : Practice/Week5/Ex4.o
-
-# target to build an object file
-Practice/Week5/Ex4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.o
-.PHONY : Practice/Week5/Ex4.c.o
-
-Practice/Week5/Ex4.i: Practice/Week5/Ex4.c.i
-.PHONY : Practice/Week5/Ex4.i
-
-# target to preprocess a source file
-Practice/Week5/Ex4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.i
-.PHONY : Practice/Week5/Ex4.c.i
-
-Practice/Week5/Ex4.s: Practice/Week5/Ex4.c.s
-.PHONY : Practice/Week5/Ex4.s
-
-# target to generate assembly for a file
-Practice/Week5/Ex4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Practice_Week5_Ex4.dir/build.make CMakeFiles/Practice_Week5_Ex4.dir/Practice/Week5/Ex4.c.s
-.PHONY : Practice/Week5/Ex4.c.s
+BookPractice/Ch7/Ex7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookPractice_Ch7_Ex7.dir/build.make CMakeFiles/BookPractice_Ch7_Ex7.dir/BookPractice/Ch7/Ex7.c.s
+.PHONY : BookPractice/Ch7/Ex7.c.s
 
 # Help Target
 help:
@@ -1530,158 +383,34 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BookPractice_Ch1_Ex1"
-	@echo "... BookPractice_Ch3_Ex1"
-	@echo "... BookPractice_Ch3_Ex2"
-	@echo "... BookPractice_Ch3_Ex3"
-	@echo "... BookPractice_Ch3_Ex4"
-	@echo "... BookPractice_Ch3_Ex5"
-	@echo "... BookPractice_Ch3_Ex6"
-	@echo "... BookPractice_Ch3_Ex7"
-	@echo "... BookPractice_Ch3_Ex8"
-	@echo "... BookPractice_Ch4_Ex1"
-	@echo "... BookPractice_Ch4_Ex2"
-	@echo "... BookPractice_Ch5_Ex1"
-	@echo "... BookPractice_Ch5_Ex2"
-	@echo "... BookPractice_Ch5_Ex3"
-	@echo "... BookPractice_Ch5_Ex4"
-	@echo "... BookPractice_Ch5_Ex5"
-	@echo "... BookPractice_Ch5_deque"
-	@echo "... BookPractice_Ch6_Ex1"
-	@echo "... BookPractice_Ch6_Ex2"
-	@echo "... BookPractice_Ch6_LabEx1"
-	@echo "... BookPractice_Ch6_LabEx2"
-	@echo "... BookPractice_Ch6_LabEx3"
-	@echo "... BookPractice_Ch6_LabEx4"
-	@echo "... Practice_Ch2_Ex1"
-	@echo "... Practice_Ch2_Ex2"
-	@echo "... Practice_Ch2_Ex3"
-	@echo "... Practice_Ch2_Ex4"
-	@echo "... Practice_Ch2_Ex5"
-	@echo "... Practice_Ch2_Ex6"
-	@echo "... Practice_Ch2_Ex7"
-	@echo "... Practice_Ch2_Ex8"
-	@echo "... Practice_Week3_Maze1"
-	@echo "... Practice_Week4_Ex6"
-	@echo "... Practice_Week4_Ex7"
-	@echo "... Practice_Week5_Ex1"
-	@echo "... Practice_Week5_Ex2"
-	@echo "... Practice_Week5_Ex3"
-	@echo "... Practice_Week5_Ex4"
-	@echo "... BookPractice/Ch1/Ex1.o"
-	@echo "... BookPractice/Ch1/Ex1.i"
-	@echo "... BookPractice/Ch1/Ex1.s"
-	@echo "... BookPractice/Ch3/Ex1.o"
-	@echo "... BookPractice/Ch3/Ex1.i"
-	@echo "... BookPractice/Ch3/Ex1.s"
-	@echo "... BookPractice/Ch3/Ex2.o"
-	@echo "... BookPractice/Ch3/Ex2.i"
-	@echo "... BookPractice/Ch3/Ex2.s"
-	@echo "... BookPractice/Ch3/Ex3.o"
-	@echo "... BookPractice/Ch3/Ex3.i"
-	@echo "... BookPractice/Ch3/Ex3.s"
-	@echo "... BookPractice/Ch3/Ex4.o"
-	@echo "... BookPractice/Ch3/Ex4.i"
-	@echo "... BookPractice/Ch3/Ex4.s"
-	@echo "... BookPractice/Ch3/Ex5.o"
-	@echo "... BookPractice/Ch3/Ex5.i"
-	@echo "... BookPractice/Ch3/Ex5.s"
-	@echo "... BookPractice/Ch3/Ex6.o"
-	@echo "... BookPractice/Ch3/Ex6.i"
-	@echo "... BookPractice/Ch3/Ex6.s"
-	@echo "... BookPractice/Ch3/Ex7.o"
-	@echo "... BookPractice/Ch3/Ex7.i"
-	@echo "... BookPractice/Ch3/Ex7.s"
-	@echo "... BookPractice/Ch3/Ex8.o"
-	@echo "... BookPractice/Ch3/Ex8.i"
-	@echo "... BookPractice/Ch3/Ex8.s"
-	@echo "... BookPractice/Ch4/Ex1.o"
-	@echo "... BookPractice/Ch4/Ex1.i"
-	@echo "... BookPractice/Ch4/Ex1.s"
-	@echo "... BookPractice/Ch4/Ex2.o"
-	@echo "... BookPractice/Ch4/Ex2.i"
-	@echo "... BookPractice/Ch4/Ex2.s"
-	@echo "... BookPractice/Ch5/Ex1.o"
-	@echo "... BookPractice/Ch5/Ex1.i"
-	@echo "... BookPractice/Ch5/Ex1.s"
-	@echo "... BookPractice/Ch5/Ex2.o"
-	@echo "... BookPractice/Ch5/Ex2.i"
-	@echo "... BookPractice/Ch5/Ex2.s"
-	@echo "... BookPractice/Ch5/Ex3.o"
-	@echo "... BookPractice/Ch5/Ex3.i"
-	@echo "... BookPractice/Ch5/Ex3.s"
-	@echo "... BookPractice/Ch5/Ex4.o"
-	@echo "... BookPractice/Ch5/Ex4.i"
-	@echo "... BookPractice/Ch5/Ex4.s"
-	@echo "... BookPractice/Ch5/Ex5.o"
-	@echo "... BookPractice/Ch5/Ex5.i"
-	@echo "... BookPractice/Ch5/Ex5.s"
-	@echo "... BookPractice/Ch5/deque.o"
-	@echo "... BookPractice/Ch5/deque.i"
-	@echo "... BookPractice/Ch5/deque.s"
-	@echo "... BookPractice/Ch6/Ex1.o"
-	@echo "... BookPractice/Ch6/Ex1.i"
-	@echo "... BookPractice/Ch6/Ex1.s"
-	@echo "... BookPractice/Ch6/Ex2.o"
-	@echo "... BookPractice/Ch6/Ex2.i"
-	@echo "... BookPractice/Ch6/Ex2.s"
-	@echo "... BookPractice/Ch6/LabEx1.o"
-	@echo "... BookPractice/Ch6/LabEx1.i"
-	@echo "... BookPractice/Ch6/LabEx1.s"
-	@echo "... BookPractice/Ch6/LabEx2.o"
-	@echo "... BookPractice/Ch6/LabEx2.i"
-	@echo "... BookPractice/Ch6/LabEx2.s"
-	@echo "... BookPractice/Ch6/LabEx3.o"
-	@echo "... BookPractice/Ch6/LabEx3.i"
-	@echo "... BookPractice/Ch6/LabEx3.s"
-	@echo "... BookPractice/Ch6/LabEx4.o"
-	@echo "... BookPractice/Ch6/LabEx4.i"
-	@echo "... BookPractice/Ch6/LabEx4.s"
-	@echo "... Practice/Week2/Ex1.o"
-	@echo "... Practice/Week2/Ex1.i"
-	@echo "... Practice/Week2/Ex1.s"
-	@echo "... Practice/Week2/Ex2.o"
-	@echo "... Practice/Week2/Ex2.i"
-	@echo "... Practice/Week2/Ex2.s"
-	@echo "... Practice/Week2/Ex3.o"
-	@echo "... Practice/Week2/Ex3.i"
-	@echo "... Practice/Week2/Ex3.s"
-	@echo "... Practice/Week2/Ex4.o"
-	@echo "... Practice/Week2/Ex4.i"
-	@echo "... Practice/Week2/Ex4.s"
-	@echo "... Practice/Week2/Ex5.o"
-	@echo "... Practice/Week2/Ex5.i"
-	@echo "... Practice/Week2/Ex5.s"
-	@echo "... Practice/Week2/Ex6.o"
-	@echo "... Practice/Week2/Ex6.i"
-	@echo "... Practice/Week2/Ex6.s"
-	@echo "... Practice/Week2/Ex7.o"
-	@echo "... Practice/Week2/Ex7.i"
-	@echo "... Practice/Week2/Ex7.s"
-	@echo "... Practice/Week2/Ex8.o"
-	@echo "... Practice/Week2/Ex8.i"
-	@echo "... Practice/Week2/Ex8.s"
-	@echo "... Practice/Week3/Maze_201721164.o"
-	@echo "... Practice/Week3/Maze_201721164.i"
-	@echo "... Practice/Week3/Maze_201721164.s"
-	@echo "... Practice/Week4/Ex6.o"
-	@echo "... Practice/Week4/Ex6.i"
-	@echo "... Practice/Week4/Ex6.s"
-	@echo "... Practice/Week4/Ex7.o"
-	@echo "... Practice/Week4/Ex7.i"
-	@echo "... Practice/Week4/Ex7.s"
-	@echo "... Practice/Week5/Ex1.o"
-	@echo "... Practice/Week5/Ex1.i"
-	@echo "... Practice/Week5/Ex1.s"
-	@echo "... Practice/Week5/Ex2.o"
-	@echo "... Practice/Week5/Ex2.i"
-	@echo "... Practice/Week5/Ex2.s"
-	@echo "... Practice/Week5/Ex3.o"
-	@echo "... Practice/Week5/Ex3.i"
-	@echo "... Practice/Week5/Ex3.s"
-	@echo "... Practice/Week5/Ex4.o"
-	@echo "... Practice/Week5/Ex4.i"
-	@echo "... Practice/Week5/Ex4.s"
+	@echo "... BookPractice_Ch7_Ex1"
+	@echo "... BookPractice_Ch7_Ex2"
+	@echo "... BookPractice_Ch7_Ex3"
+	@echo "... BookPractice_Ch7_Ex4"
+	@echo "... BookPractice_Ch7_Ex5"
+	@echo "... BookPractice_Ch7_Ex6"
+	@echo "... BookPractice_Ch7_Ex7"
+	@echo "... BookPractice/Ch7/Ex1.o"
+	@echo "... BookPractice/Ch7/Ex1.i"
+	@echo "... BookPractice/Ch7/Ex1.s"
+	@echo "... BookPractice/Ch7/Ex2.o"
+	@echo "... BookPractice/Ch7/Ex2.i"
+	@echo "... BookPractice/Ch7/Ex2.s"
+	@echo "... BookPractice/Ch7/Ex3.o"
+	@echo "... BookPractice/Ch7/Ex3.i"
+	@echo "... BookPractice/Ch7/Ex3.s"
+	@echo "... BookPractice/Ch7/Ex4.o"
+	@echo "... BookPractice/Ch7/Ex4.i"
+	@echo "... BookPractice/Ch7/Ex4.s"
+	@echo "... BookPractice/Ch7/Ex5.o"
+	@echo "... BookPractice/Ch7/Ex5.i"
+	@echo "... BookPractice/Ch7/Ex5.s"
+	@echo "... BookPractice/Ch7/Ex6.o"
+	@echo "... BookPractice/Ch7/Ex6.i"
+	@echo "... BookPractice/Ch7/Ex6.s"
+	@echo "... BookPractice/Ch7/Ex7.o"
+	@echo "... BookPractice/Ch7/Ex7.i"
+	@echo "... BookPractice/Ch7/Ex7.s"
 .PHONY : help
 
 
