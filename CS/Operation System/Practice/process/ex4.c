@@ -13,9 +13,11 @@ int main(){
 	}
 	else if(pid==0){
 		execlp("/bin/ls","ls",NULL);
-	}
+		printf("Child Procss exec");	
+}
 	else{
 		wait(NULL);
+		printf("parent's wait");
 		printf("Child Complete");
 	}
 	return 0;
