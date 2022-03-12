@@ -42,13 +42,23 @@ class JpaMain {
             em.flush();
             em.clear();
 
-            String query = "select t From Team t join fetch t.members";
+            System.out.println("=========");
+            String query = "select t from Team t";
 
+            //fetch로 끌고와라
+
+            //묵시적 내부조인이 발생하면 안됨
+            //성능 튜닝에 큰 문제가 생길수있음
+            //상태필드로만 코딩해야됨
             List<Team> result = em.createQuery(query,Team.class)
                     .getResultList();
-            for (Team team : result) {
-                System.out.println("team = " + team.getName() + "|" + team.getMembers().size());
-            }
+
+            System.out.println("=========");
+            for (Team team: result) {
+                System.out.println("Team = " +team.getName() +" | "+team.getMembers().size());
+            } // 회원1,팀 A(SQL)
+              // 회원2, 팀 2(1차 캐시)
+              // 게시물을 예로 들어  회원 100명 -> N+1의 문제가 발생함
 
 
 //            for(int i=0; i<100;i++) {
