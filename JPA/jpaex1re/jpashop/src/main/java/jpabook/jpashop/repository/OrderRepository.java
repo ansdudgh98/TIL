@@ -116,11 +116,14 @@ public class OrderRepository {
                         " join fetch oi.item i",Order.class)
                 .getResultList();
     }
-
-    public List<Order> findAllWithMemberDelivery() {
-        return em.createQuery("select  o from Order o"
+    //N+1의 문제를 해결해 주지만 일부 trade off 가 있다.
+    public List<Order> findAllWithMemberDelivery(int offset,int limit) {
+        return em.createQuery("select o from Order o"
                 + " join fetch o.member m"
-                + " join fetch o.delivery d", Order.class).getResultList();
+                + " join fetch o.delivery d", Order.class)
+                .setFirstResult(offset)
+                .setMaxResults(limit)
+                .getResultList();
     }
 }
 

@@ -12,7 +12,8 @@ spring:
       hibernate:
         #show_sql: true #운영환경의 log는 모두 logging을 통해서 실행해야됨
         format_sql: true
-
+        default_batch_fetch_size : 100
+    open-in-view: false
 logging:
   level:
     org.hibernate.SQL: debug
