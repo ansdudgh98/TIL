@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-@Getter
 @EntityListeners(AuditingEntityListener.class)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Item implements Persistable<String> {
@@ -24,6 +23,11 @@ public class Item implements Persistable<String> {
 
     public Item(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String getId() {
+        return null;
     }
 
     @Override
