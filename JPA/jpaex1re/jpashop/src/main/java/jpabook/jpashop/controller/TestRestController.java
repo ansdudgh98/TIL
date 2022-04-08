@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class TestRestController {
     @PostMapping("/test")
-    @RequestParam
     public void test(){
         log.info("post test controller");
     }
