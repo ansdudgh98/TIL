@@ -19,6 +19,7 @@ public class Member {
     private Long id;
 
     @NotEmpty
+
     private String name;
 
     @Embedded //한곳에만 있어도 되나 내장형인것을 표현하기 위해 두곳 다 사용
