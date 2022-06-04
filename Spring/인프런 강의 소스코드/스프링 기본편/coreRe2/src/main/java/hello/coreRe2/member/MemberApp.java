@@ -1,0 +1,17 @@
+package hello.coreRe2.member;
+
+import hello.coreRe2.AppConfig;
+
+public class MemberApp {
+
+    public static void main(String[] args) {
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        Member member = new Member(1L, "memberA", Grade.VIP);
+        memberService.join(member);
+
+        Member findMember = memberService.findMember(1L);
+        System.out.println("member = " + member.getName());
+        System.out.println("findMember = " + findMember.getName());
+    }
+}

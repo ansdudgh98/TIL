@@ -1,11 +1,4 @@
-/CS/.idea
-/CS/Data Structure/C_DataStructure/.idea
-/CS/Data Structure/C_DataStructure/cmake-build-debug
-/CS/Data Structure/C_DataStructure/CMakeLists.txt
-/JAVA/fastcampus java/.idea
-/JAVA/fastcampus java/out
-/CS/Operation System/Practice/process/out
-/CS/Operation System/Practice/Thread/out
-.idea/
-.gradle/
-
+/.gradle
+/.idea
+.gradle
+.idea
