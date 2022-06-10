@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CoreRe2Application {
 
 	public static void main(String[] args) {
+
+
+
 		SpringApplication.run(CoreRe2Application.class, args);
 
 	}
