@@ -4,11 +4,7 @@ spring:
 #    username: sa
 #    password:
 #    driver-class-name: org.h2.Driver
-#
-#
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
+#x
 #    properties:
 #      hibernate:
 ##        show_sql: true
