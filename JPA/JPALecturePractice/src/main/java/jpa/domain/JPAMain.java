@@ -1,36 +1,33 @@
-package hellojpa;
+package jpa.domain;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.util.List;
 
-
-public class jpaMain {
+public class JPAMain {
 
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
+
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPALECTUREPRACTICE");
 
         EntityManager em = emf.createEntityManager();
 
         EntityTransaction tx = em.getTransaction();
-
         tx.begin();
-
-        //code
-        try {
-
-            Member member = new Member();
-            em.persist(member);
-
+        try{
+            System.out.println("========");
+            System.out.println("========");
             tx.commit();
-        }catch(Exception e){
+        }catch (Exception e){
+            e.printStackTrace();
             tx.rollback();
         }finally {
             em.close();
         }
         emf.close();
     }
+
+
 
 }
