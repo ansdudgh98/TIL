@@ -22,23 +22,16 @@ public class JPAMain {
         try{
             System.out.println("시작");
 
-            Address address = new Address("city","street","10000");
+            List<Member> resultList = em.createQuery(
+                    "select m From Member m where m.username like '%kim%'", Member.class
+            ).getResultList();
 
-            Member member1 = new Member();
-            member1.setUsername("member1");
-            member1.setAddress(address);
-            em.persist(member1);
+            for (Member member : resultList) {
 
-            Member member2 = new Member();
-            member2.setUsername("member2");
-            member2.setAddress(address);
-            em.persist(member2);
+            }
 
 
-            System.out.println("================");
-
-            System.out.println("================");
-           //지우면 데이터 insert안됨
+            //지우면 데이터 insert안됨
             tx.commit();
 
         }catch (Exception e){
