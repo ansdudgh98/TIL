@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60af452f-a5e8-4467-a0ee-1bc9eb070e71" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/out/production/classes/jpa/start/JPAMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/out/production/classes/jpa/start/JPAMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/out/production/classes/jpa/start/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/out/production/classes/jpa/start/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/out/production/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/out/production/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/src/main/java/jpa/start/JPAMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/src/main/java/jpa/start/JPAMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JPALecture/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JPALecture/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="25TRDc10FAkV8sWPlmEJFMVS7Xf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="jpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hellojpa.jpaMain" />
+      <module name="jpa-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hellojpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.jpaMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60af452f-a5e8-4467-a0ee-1bc9eb070e71" name="Changes" comment="" />
+      <created>1645548970771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645548970771</updated>
+      <workItem from="1645548973036" duration="20178000" />
+      <workItem from="1645701680921" duration="7237000" />
+      <workItem from="1645772499835" duration="3049000" />
+      <workItem from="1645776379023" duration="6000" />
+      <workItem from="1645791973292" duration="2000000" />
+      <workItem from="1645855803727" duration="6083000" />
+      <workItem from="1645884411417" duration="1146000" />
+      <workItem from="1645886194831" duration="210000" />
+      <workItem from="1647834371820" duration="57000" />
+      <workItem from="1651382651568" duration="2090000" />
+      <workItem from="1651459117779" duration="26000" />
+      <workItem from="1659576313120" duration="617000" />
+      <workItem from="1659867438821" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
