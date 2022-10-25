@@ -767,4 +767,12 @@ public class QuerydslBasicTest {
             System.out.println("s = " + s);
         }
     }
+    @Test
+    public void count(){
+        Long longCount = queryFactory
+                .select(member.count())
+                .from(member)
+                .fetchOne();
+
+    }
 }

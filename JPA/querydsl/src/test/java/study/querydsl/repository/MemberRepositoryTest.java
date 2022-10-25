@@ -71,6 +71,7 @@ public class MemberRepositoryTest {
     }
 
 
+
     @Test
     public void searchPageSimple(){
         Team teamA = new Team("teamA");

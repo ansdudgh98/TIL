@@ -1,7 +1,5 @@
 package study.querydsl.repository;
 
-import com.querydsl.core.QueryResults;
-import com.querydsl.core.annotations.QueryProjection;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -13,7 +11,6 @@ import org.springframework.data.support.PageableExecutionUtils;
 import study.querydsl.dto.MemberSearchCondition;
 import study.querydsl.dto.MemberTeamDto;
 import study.querydsl.dto.QMemberTeamDto;
-import study.querydsl.entity.Member;
 
 import java.util.List;
 
@@ -73,7 +70,10 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
 //
         List<MemberTeamDto> results = getResults_Refactoring(condition, pageable);
 
-        long total = results.size();
+        long total = queryFactory
+                .select(member.count())
+                .from(member)
+                .fetchOne();
 
         return new PageImpl<MemberTeamDto>(results,pageable,total);
     }
@@ -127,8 +127,8 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
     public Page<MemberTeamDto> searchPageComplex(MemberSearchCondition condition, Pageable pageable) {
         List<MemberTeamDto> content = getResults_Refactoring(condition, pageable);
 
-        JPAQuery<Member> countQuery = queryFactory
-                .select(member)
+        JPAQuery<Long> countQuery = queryFactory
+                .select(member.count())
                 .from(member)
                 .leftJoin(member.team, team)
                 .where(
@@ -139,7 +139,7 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
                 );
 
 
-        return PageableExecutionUtils.getPage(content,pageable, countQuery.fetch()::size);
+        return PageableExecutionUtils.getPage(content,pageable, countQuery::fetchOne);
 
 //        return new PageImpl<>(content,pageable,total);
     }
