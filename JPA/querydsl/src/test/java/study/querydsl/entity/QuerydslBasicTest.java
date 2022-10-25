@@ -212,8 +212,8 @@ public class QuerydslBasicTest {
         Tuple tuple = result.get(0);
         assertThat(tuple.get(member.count())).isEqualTo(4);
         assertThat(tuple.get(member.age.sum())).isEqualTo(100);
-        assertThat(member.age.max()).isEqualTo(25);
-        assertThat(member.age.min()).isEqualTo(10);
+        assertThat(tuple.get(member.age.max())).isEqualTo(40);
+        assertThat(tuple.get(member.age.min())).isEqualTo(10);
     }
 
     /**
@@ -576,7 +576,7 @@ public class QuerydslBasicTest {
     public void findUserDtoByField(){
         List<UserDto> result = queryFactory
                 .select(Projections.fields(UserDto.class,
-                        member.username.as("name"),
+                        member.username,
                         member.age))
                 .from(member)
                 .fetch();
@@ -591,7 +591,7 @@ public class QuerydslBasicTest {
         QMember memberSub = new QMember("memberSub");
 
         List<UserDto> result = queryFactory
-                .select(Projections.fields(UserDto.class,
+                .select(Projections.constructor(UserDto.class,
                         member.username.as("name"),
                         ExpressionUtils.as(JPAExpressions
                                 .select(memberSub.age.max())
@@ -744,5 +744,27 @@ public class QuerydslBasicTest {
                 .delete(member)
                 .where(member.age.gt(18))
                 .execute();
+    }
+    
+    @Test
+    public void sqlFunction(){
+        String result = queryFactory
+                .select(Expressions.stringTemplate("function('replace', {0}, {1}, {2})"
+                        , member.username, "member", "M"))
+                .from(member)
+                .fetchFirst();
+    }
+    @Test
+    public void sqlFunction2(){
+        List<String> result = queryFactory
+                .select(member.username)
+                .from(member)
+                .where(member.username.eq(member.username.lower()))
+//                .where(member.username.eq(Expressions.stringTemplate("function('lower',{0})"
+//                        , member.username)))
+                .fetch();
+        for (String s : result) {
+            System.out.println("s = " + s);
+        }
     }
 }
