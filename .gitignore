@@ -201,3 +201,6 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,macos,java,gradle
+
+#2022년 10월 이전 공부 폴더
+2022.10이전프로젝트폴더
