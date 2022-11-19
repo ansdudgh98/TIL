@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="354fed15-5705-47e6-9c7a-ef22f69041be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../mvc2편/validation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc2편/validation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc2편/validation/src/main/java/hello/itemservice/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc2편/validation/src/main/java/hello/itemservice/domain/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc2편/validation/src/main/resources/errors.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc2편/validation/src/main/resources/errors.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc2편/validation/src/main/resources/templates/validation/v2/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc2편/validation/src/main/resources/templates/validation/v2/item.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HliqSBxJeNyakCoZKJyZ0i1SHr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="354fed15-5705-47e6-9c7a-ef22f69041be" name="Changes" comment="" />
+      <created>1668866264834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668866264834</updated>
+      <workItem from="1668866265999" duration="191000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+#성공케이스
+POST http://localhost:8080/validation/api/items
+Content-Type: application/json
+
+{
+  "itemName" : "hello",
+  "price" : 1000,
+  "quantity": 1000
+}
+
+###
+#실패케이스 - 가격 타입 오류
+POST http://localhost:8080/validation/api/items
+Content-Type: application/json
+
+{
+  "itemName" : "hello",
+  "price" : "A",
+  "quantity": 10000
+}
+
+###
+
+#실패케이스 - 수량 한도 초과
+POST http://localhost:8080/validation/api/items
+Content-Type: application/json
+
+{
+  "itemName" : "hello",
+  "price" : 1000,
+  "quantity": 10000
+}
+
+
