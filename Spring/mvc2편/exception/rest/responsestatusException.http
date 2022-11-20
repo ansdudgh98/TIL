@@ -1,0 +1,17 @@
+#/api/response-status-ex1
+
+GET http://localhost:8080/api/response-status-ex1
+Accept: application/json
+
+
+###
+#/api/response-status-ex2
+GET http://localhost:8080/api/response-status-ex2
+Accept: application/json
+
+
+###
+#/api/default-handler-ex
+
+GET http://localhost:8080/api/default-handler-ex
+Accept: application/json

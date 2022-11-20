@@ -1,25 +1,25 @@
 #/api/members/spring 정상작동
 
-GET http://localhost:8080/api/members/spring
+GET http://localhost:8080/api2/members/spring
 Content-Type: application/json
 
 ###
 #예외 발생 - ex입력 - json
-GET http://localhost:8080/api/members/ex
+GET http://localhost:8080/api2/members/ex
 Accept: application/json
 
 ###
 #예외 발생 - ex입력 - api
-GET http://localhost:8080/api/members/ex
+GET http://localhost:8080/api2/members/ex
 Accept: text/html
 
 ###
 #예외 발생 - bad입력 - api
-GET http://localhost:8080/api/members/bad
+GET http://localhost:8080/api2/members/bad
 Accept: application/json
 
 
 ###
 #예외 발생 - user-ex 입력 - api
-GET http://localhost:8080/api/members/user-ex
+GET http://localhost:8080/api2/members/user-ex
 Accept: application/json

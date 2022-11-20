@@ -12,15 +12,18 @@ import java.io.IOException;
 public class MyHandlerExceptionResolver implements HandlerExceptionResolver {
     @Override
     public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
+
+        log.info("call resolver", ex);
+
         try {
-            if(ex instanceof IllegalAccessException){
+            if (ex instanceof IllegalAccessException) {
                 log.info("IllegalArgumentException resolver to 400");
-                response.sendError(HttpServletResponse.SC_BAD_REQUEST,ex.getMessage());
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, ex.getMessage());
                 return new ModelAndView();
             }
-            } catch (IOException e) {
-                log.error("resolver ex",e);
-            }
+        } catch (IOException e) {
+            log.error("resolver ex", e);
+        }
         return null;
     }
 
