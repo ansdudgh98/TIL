@@ -4,7 +4,7 @@
 **Spring** 
 <ol>
     <li><a href="https://github.com/ansdudgh98/TIL/tree/master/Spring/mvc1%ED%8E%B8">스프링 MVC 1편</a></li>
-    li><a href="https://github.com/ansdudgh98/TIL/tree/master/Spring/mvc2%ED%8E%B8">스프링 MVC 2편</a></li>
+    <li><a href="https://github.com/ansdudgh98/TIL/tree/master/Spring/mvc2%ED%8E%B8">스프링 MVC 2편</a></li>
 </ol>
 
 
