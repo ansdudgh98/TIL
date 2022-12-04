@@ -200,6 +200,8 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
+# oath
+application-oauth.properties
 # End of https://www.toptal.com/developers/gitignore/api/intellij,macos,java,gradle
 
 #2022년 10월 이전 공부 폴더
