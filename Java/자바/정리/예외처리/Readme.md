@@ -6,11 +6,11 @@
 - 예외(exception) : 프로그램 코드에 의해서 수습될 수 있는 미약한 오류
     - 예외클래스 계층도
 
-      <그림>
+      ![IMG_0003](https://user-images.githubusercontent.com/52616389/212485140-2c03bae8-bc4b-49e0-b040-864f6fa862ac.JPG)
 
     - Exception클래스와 RuntimeException클래스 중심의 상속 계층도
 
-      <그림>
+      ![IMG](https://user-images.githubusercontent.com/52616389/212485421-b971488d-877b-4aa0-aa81-d610e5e86a2a.png)
 
     - 예외 클래스들은 두 그룹으로 나뉘어 질 수 있다.
         1. Exception클래스와 그 자손들(RuntimeException과 자손들 제외)
