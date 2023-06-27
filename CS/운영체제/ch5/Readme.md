@@ -31,6 +31,106 @@
     3. Blocked - Ready 예) I/O 완료후 인터럽트
     4. Terminate
 
-  - 1,4에서의 스케줄링은 nonepreemtive(강제로 뺏지 않고 자진반납)
-  - 다른 스케줄링은 preemptive(=강제로 빼앗음)
+  - 1,4에서의 스케줄링은 nonepreemtive(강제로 뺏지 않고 자진반납) - 비 선점형
+  - 다른 스케줄링은 preemptive(=강제로 빼앗음) - 선점형
+
+- Scheduling Criteria(performance Index,performance Measure)
+  - 시스템 입장에서의 성능 척도
+    - CPU utilization(이용률) : keep the CPU as busy as possible
+    - Throughput(처리량) : of processes that complete their excution per time unit
+  - 프로그램 입장에서의 성능 척도
+    - Turnaround time(소요시간, 반환시간) : amount of time to execute a particular process
+    - Waiting time (대기시간) : amount of time a process has been waiting in the ready
+    - Response time(응답시간) : amount of time if takes from when a request was submitted until the first response is produced. not output (for time-sharing environment)
+
+- Scheduling Algorithms
+  - FCFS(First-Come First-Served): 먼저 온 순서대로 먼저 수행한다. => 비 선점형 스케줄링
+    - 들어오는 시간으로 인한 기다리는 시간에 상당한 영향을 끼침
+    - Convoy effect(호의 효과)
+  - SJF(Shortes-Job-First) : 각 프로세스의 다음번 CPU burst time을 가지고 스케줄링에 활용
+    - CPU burst time이 가장 짧은 프로세스를 제일 먼저 스케줄
+    - Two schemes :
+      - Nonpreemptive : 일단 CPU를 먼저 잡음녀 이번 CPU Burst가 완료 될 때까지 CPU를 선점(preemtion)당하지 않음
+      <img src="./img3.png"/>
+
+      - Preemptive : 현재 수행중인 프로세스의 남은 burst time보다 더 짧은 CPU burst time을 가지는 새로운 프로세스가 도착하면 CPU를 뺴앗김
+      <img src="./img4.png"/>
+      - 이 방법을 Shortest-Remaining-Time-First(SRTF)이라고 부른다.
+    - SJF is optimal : 주어진 프로세스들에 대해 minimum average waiting time을 보장
+    - 문제점
+      1. starvation(기아 현상) :  낮은 우선순위의 프로세스는 절대로 실행될 수 없을 것 이다.
+      2. CPU 사용시간을 미리 알 수가 없음, 추정만이 가능하다. 과거의 CPU burst time을 이용해서 추정(exponential averaging)
+  - Priority Scheduling : 우선순위가 제일 높은 프로세스에게 할당하겠다.
+    - Preemtive
+    - Nonpreemtive
+    - SJF는 일종의 priority scheduling이다.
+    - 문제점 : starvation
+    - 해결책 : Aging => 시간이 지남으로써 그 프로세스의 우선순위를 증가시켜준다.
+  - Round Robin(RR)
+    <img src="./img5.png"/>
+    - 각 프로세스는 동일한 크기의 할당 시간(time quantum)을 가짐(일반적으로 10-100 milliseconds)
+    - 할당시간이 지나면 프로세스는 선점(preemted)당하고 ready queue의 제일 뒤에 가서 다시 줄을 선다.
+    - n개의 프로세스가 ready queue에 있고 할당 시간이 q time unit인 경우 각 프로세스는 최대 q time unit단위로 cpu시간의 1/n을 얻는다 => 어떤 프로세스도 (n-1)q time unit이상 기다리지 않는다.
+    - performance
+      - q large => FCFS
+      - q small => context switch 오버헤드가 커진다.
+  - Multilevel Queue
+    <img src="./img6.png"/>
+
+    - Ready queue를 여러개로 분할
+      - foreground(interactive)
+      - background(batch - no human interaction)
+    - 각 큐는 독립적인 스케줄링 알고리즘을 가짐
+      - foreground - RR
+      - background - FCFS
+    - 큐에대한 스케줄링이 필요
+      - Fixed priority scheduling
+        - serve all from foreground then from background
+        - Possiblity of starvation
+      - Time slice 
+        - 각 큐에 CPU time을 적절한 비율로 할당
+        - Eg.. 80% to foreground in RR, 20% to background in FCFS
+      
+  - Multilevel Feedback Queue
+    <img src="./img7.png"/>
+
+    - 프로세스가 다른 큐로 이동 가능
+    - 에이징(aging)을 이와 같은 방식으로 구현할 수 있다.
+    - Multilevel-feedback-queue-scheduler를 정의하는 파라미터들
+      - Queue의 수
+      - 각 큐의 scheduling algorithm
+      - Process를 상위 큐로 보내는 기준
+      - Process를 하위 큐로 내쫓는 기준
+      - 프로세스가 CPU서비스를 받으려 할 때 들어갈 큐를 결정하는 기준
+
+- Multiple-Processor Scheduling
+  - CPU가 여러 개인 경우 스케줄링은 더욱 복잡해짐
+  - Homogeneous processor인 경우
+    - Queue에 한줄로 세워서 각 프로세스가 알아서 꺼내가게 할 수 있다.
+    - 반드시 특정 프로세서에서 수행 되어야 하는 프로세스가 있는 경우는 문제가 더 복잡해짐
+  - Load sharing
+    - 일부 프로세서에 job이 몰리지 않도록 부하를 적절히 공유하는 메커니즘 필요
+    - 별개의 큐를 두는 방법 vs 공동 큐를 사용하는 방법
+  - Symmetric Multiprocessing(SMP)
+    - 각 프로세서가 각자 알아서 스케줄링 결정
+  - Asymmetric Multiprocessing  
+    - 하나의 프로세서가 시스템 데이터의 접근과 공유를 책임지고 나머지 프로세스는 거기에 따름
+
+- Real-Time Scheduling 
+  - Hard real-time systems
+    - 정해진 시간 안에 반드시 끝내도록 스케줄링 해야함
+  - Soft real-time computing
+    - 일반 프로세스에 비해 높은 priority
+
+- Thread Scheduling
+  - Local Scheduling : User level thread의 경우 사용자 수준의 thread library에 의해 어떤 thread를 스케줄 할지 결정
+  - Global Scheduling : Kernel level thread의 경우 일반 프로세스와 마찬가지로 커널의 단기 스케줄러가 어떤 thread를 스케줄 할지 결정
+
+- Algorithm Evalation(어떠한 알고리즘이 좋은지에 대해서)
+  - Queueing models 
+    - 확률 분포로 주어지는 arrival rate와 service rate등을 통해 각종 performance index 값을 계산
+  - Implementation(구현) & Measurement(성능측정)
+    - 실제 시스템에 알고리즘을 구현하여 실제 작업(workload)에 대해서 성능을 측정 비교
+  - Simulation(모의 실험)
+    - 알고리즘을 모의 프로그램으로 작성후 trace를 입력으로 하여 결과 비교
 
