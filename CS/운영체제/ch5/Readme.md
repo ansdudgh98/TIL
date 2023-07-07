@@ -18,7 +18,7 @@
       - 계산 위주의 job
       - (few very long CPU bursts)
 
-- CPU Scheduler % Dispathcer
+- CPU Scheduler & Dispathcer
   - CPU Scheduler
     - Ready 상태의 프로세스 중에서 이번에 CPU를 줄 프로세스를 고른다.
   - Dipatcher
