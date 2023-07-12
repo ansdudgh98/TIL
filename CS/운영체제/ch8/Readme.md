@@ -154,3 +154,123 @@
     - 속도 향상을 위해 associative register혹은 translation look-aside buffer(TLB)라 불리는 고속의 lookup hardware cache 사용
     - Paging Hardware with TLB
       <img src="./img9.png"/>
+    - Associative registers(TLB): parrallel searc가 가능
+      - TLB에는 page table 중 일부만 존재
+      - Address translation
+        - page table중 일부가 associative register에 보관되어 있음
+        - 만약 해당 page #가 associative register에 있는 경우 곧바로 frame #를 얻음
+        - 그렇지 않은 경우 main memory에 있는 Page table로 부터 frame #을 얻음
+        - TLB는 context switch때 flush(remove old entries)
+    - Effective Access Time
+      <img src="./img10.png"/>
+- Two-level Page Table
+  - 현대의 컴퓨터는 address space가 매우 큰 프로그램 지원
+  - 32bit address 사용시 : 2^32 (4G)의 주소 공간
+    - page size가 4K시 1M개의 page table entry 필요
+    - 각 page entry가 4B시 프로세스당 4M의 page table 필요
+    - 그러나 대부분의 프로그램은 4G의 주소 공간 중 지극히 일부분만 사용하므로 page table 공간이 심하게 낭비됨
+  -> page talbe자체를 page로 구성
+  -> 사용되지 않는 주소공간에 대한 outer page table의 엔트리 값은 NULL(대응하는 inner page table이 없음)
+
+  <img src="./img11.png"/>
+  - Example
+    - logical address(on 32-bit machine with 4K page size)의 구성
+      - 20bit의 page number
+      - 12bit의 page offset
+    - page table자체가 page로 구성되기 때문에 page number는 다음과 같이 나뉜다. (각 page table entry가 4B)
+      - 10-bit의 page number.
+      - 10-bit의 Page offset.
+    - 따라서 logicla address는 다음과 같다.
+      <img src ="./img12.png"/>
+    - P1은 outer page table의 index이고
+    - P2는 outer page table의 page에서의 변위(displacement)
+  - 2단계 페이징 에서의 Address-translation scheme
+  <img src="./img13.png"/>
+  - 사용하는 이유 : 시간과 공간의 비용이 더 증가하지만 사용안하는 주소공간이 많기때문에 사용함
+- Multilevel Paging 
+  - Address space가 더 커지면 다단계 페이지 테이블 필요
+  - 각 단계의 페이지 테이블이 메모리에 존재하므로 logical address의 physical address변환에 더 많은 메모리 접근 필요
+  - TLB를 통해 메모리 접근 시간을 줄일 수 있음
+  - 4단계 페이지 테이블을 사용하는 경우
+    - 메모리 접근 시간이 100ns, TLB 접근 시간이 20ns이고
+    - TLB hit ratio가 98%인 경우
+      - effective memory access time = 0.98 * 120 + 0.02 * 520 = 128nanoseconds.
+      - 결과적으로 주소변환을 위해 28n만 소모
+- Valid(v) / Invalid(i) Bit in a Page Table
+  <img src="./img14.png"/>
+
+- Memory Protection
+  - page table의 각 entry마다 아래의 bit를 둔다.
+  - Protection bit
+    - page에 대한 접근 권한(read/write/read-only)
+  - Valid-invalid bit
+    - valid는 해당 주소의 frame에 그 프로세스를 구성하는 유효한 내용이 있음을 뜻함(접근 허용)
+    - invalid는 해당 주소의 frame에 유효한 내용이 없음을 뜻함(접근 불허)
+
+- Inverted Page Table 
+  - page table이 매우 큰 이유
+    - 모든 process별로 그 logical address에 대응하는 모든 page에 대해 page table entry가 존재
+    - 대응하는 page가 메모리에 있든 아니든 간에 page table에는 entry로 존재
+  - Inverted page table
+    - Page frame 하나당 Page table에 하나의 entry를 둔 것(system-wide)
+    - 각 page table entry는 각각의 물리적 메모리의 page frame이 담고 있는 내용 표시(process-id,process의 Logical address)
+  - 단점
+    - 테이블 전체를 탐색해야 함
+  - 조치
+  - associative register사용(expensive) 
+  <img src ="./img15.png"/>
+
+- Shared Page
+  - Shared code
+    - Re-entrant Code (=Pure code)
+    - read-only로 하여 프로세스 간에 하나의 code만 메모리에 올림
+    (eg, text editors, compilers,window systems)
+    - Shared code는 모든 프로세스의 Logical address sapce에서 동일한 위치에 있어야함(제약조건)
+  - private code and data
+    - 각 프로세스들은 독자적인 메모리에 올림
+    - private data는 logical address space의 아무곳에 와도 무방
+  - Example
+  <img src="./img15.png"/>
+
+- Segmentation
+  - 프로그램은 의미 단위인 여러 개의 segment로 구성
+    - 작게는 프로그램 구성하는 함수 하나하나를 세그먼트로 정의
+    - 크게는 프로그램 전체를 하나의 세그먼트로 정의가능
+    - 일반적으로 code,data,stack부분이 하나씩의 세그먼트로 정의됨
+  - Segment는 다음과 같은 logical unit 들임
+    <img src="img17.png"/>
+  - Logical address는 다음의 두가지로 구성 <segment-number, offset>
+  - Segment tale
+    - each table entry has :
+      - base-starting physical address of the segment
+      - limit-length of the segment
+    - Segment-table base register(STBR)
+      - 물리적 메모리에서의 segment table의 위치
+    - Segment-table length register(STLR)
+      - 프로그램이 사용하는 segment의 수
+        - segment number s is legal if s <STLR
+       <img src="img18.png"/>
+  - Example
+    <img src="./img19.png"/>
+
+  - Architecture
+    - Protectio
+      - 각 세그먼트 별로 Protection bit가 있음
+      - Each entry : 
+        - Valid bit = 0 => illegal segment
+        - Read/Write/Execution 권한 bit
+    - Sharing 
+      - shared segment
+      - same segment number
+      - segment는 의미 단위이기 때문에 공유(sharing)와 보안(Protection)에 있어 paging보다 훨씬 효과적이다.
+    - Allocation
+      - first fit/best fit
+      - external fragmentation 발생
+      - segment의 길이가 동일하지 않으므로 가변분할 방식에서와 동일한 문제점들이 발생
+  - Segmentation with Paging
+  <img src="./img20.png"/>
+
+- 주소 변환은 무조건 하드웨어가 진행함
+- IO 요청은 운영체제가 진행함
+
+    
