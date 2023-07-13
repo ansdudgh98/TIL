@@ -167,7 +167,7 @@
 - Page Cache and Buffer Cache
   - Page Cache
     - Virtual memory의 Paging system에서 사용하는 page frame을 caching의 관점에서 설명하는 용어
-    - Memory-Mapped I/O를 쓰는 경우 file의 I/O에서도 page cachetkdyd
+    - Memory-Mapped I/O를 쓰는 경우 file의 I/O에서도 page cache사용
   - Memory-Mapped I/O
     - File의 일부를 virtual memory에 mapping시킴
     - 매핑 시킨 영역에 대한 메모리 접근 연산은 파일의 입출력을 수행하게 함
