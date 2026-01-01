@@ -12,6 +12,7 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -205,3 +206,8 @@ application-oauth.properties
 # End of https://www.toptal.com/developers/gitignore/api/intellij,macos,java,gradle
 
 #2022년 10월 이전 공부 폴더
+
+# Obsidian
+.obsidian/
+.smart-env/
+.smtcmp_json_db
