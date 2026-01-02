@@ -211,3 +211,4 @@ application-oauth.properties
 .obsidian/
 .smart-env/
 .smtcmp_json_db
+**/pcap/
